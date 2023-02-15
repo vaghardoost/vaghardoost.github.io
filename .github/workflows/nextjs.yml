@@ -77,11 +77,19 @@ jobs:
   #     - name: Static HTML export with Next.js
   #       run: ${{ steps.detect-package-manager.outputs.runner }} next export && touch ./out/.nojekyll
 
+<<<<<<< HEAD
   #     - name: Upload artifact
   #       run: touch ./out/.nojekyll
   #       uses: actions/upload-pages-artifact@v1
   #       with:
   #         path: ./out
+=======
+      - name: Upload artifact
+#         run: touch ./out/.nojekyll
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./out
+>>>>>>> 4f23b13f6a894c7bee0b2600f7628f03a05ce024
 
   # Deployment job
   deploy:
