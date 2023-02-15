@@ -1,0 +1,16 @@
+.navbar {
+  height: 50px;
+}
+
+.navLink {
+    color: var(--dark-color);
+    text-decoration: none;
+    transition-duration: 500ms;
+    padding: 5px 10px 0 10px;
+    border-radius: 5px;
+}
+
+.navLink:hover {
+    color: var(--dark-color);
+    font-weight: bolder;
+}

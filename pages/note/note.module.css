@@ -1,0 +1,43 @@
+.meduimFont *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+    font-size: medium;
+}
+
+.link {
+    width: 100%;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.link:hover {
+    color: darkblue;
+}
+
+.card {
+    background-color: var(--light-color);
+    border-radius: 15px;
+    border-width: 1px;
+    margin: 10px;
+    box-shadow: var(--shadow);
+    position: relative;
+}
+
+.title {
+    margin: 0 25px;
+}
+
+.title > h1 {
+    padding-bottom: 10px;
+    border-bottom: 1px var(--shadow-color) solid;
+}
+
+.title > p {
+    text-align: end;
+}
+
+.card_links {
+    padding-right: 25px;
+}
+
+.card_links *:not(h4) {
+    font-size: small;
+}

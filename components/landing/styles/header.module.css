@@ -1,0 +1,15 @@
+.header {
+    background: url(../../../styles/header.png) var(--header-color);
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+
+.header div * {
+    text-shadow: none;
+    text-align: center;
+}

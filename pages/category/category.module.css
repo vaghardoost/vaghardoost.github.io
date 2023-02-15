@@ -1,0 +1,39 @@
+.header {
+  position: relative;
+  display: flex;
+  box-shadow: var(--shadow);
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+  text-align: center;
+  color: var(--light-color);
+  height: 200px;
+}
+
+.header .icon {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  right: 30px;
+  top: 125px;
+  padding: 10px;
+  position: absolute;
+  background-color: var(--light-color);
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+}
+
+.container {
+  margin-top: 100px;
+}
+
+.card {
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+  color: var(--dark-color);
+}
+
+.card a h5 {
+  color: var(--dark-color);
+}
