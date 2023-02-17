@@ -29,10 +29,10 @@
     top: 75px;
     right: 0;
     left: 0;
-    
+
     position: absolute;
 
-    opacity: 0.0;
+    opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
 }
@@ -42,7 +42,7 @@
 }
 
 .navbar li.navbar__has_megamenu:hover .navbar__megamenu {
-    opacity: 1.0;
+    opacity: 1;
     visibility: visible;
     top: 58px;
 }
@@ -67,9 +67,9 @@
 }
 
 .megamenu__item div * {
-    color: aliceblue;
+    color: var(--light-color);
     margin: 0;
-    width: 240px;
+    width: 200px;
     text-align: start !important;
 }
 
@@ -82,4 +82,15 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 634px) {
+    .navbar__list {
+        width: 0;
+        visibility: hidden;
+    }
+    .navbar {
+        width: 0;
+        visibility: hidden;
+    }
 }

@@ -22,18 +22,17 @@ const Home = ({ category, note }: Props) => {
 
         <Col md={12} className="center">
           <h2 className="around">مطلب برتر</h2>
-          <Link className='link' href={`/note/${note.title.replaceAll(' ','_')}`}>
+          <Link className='link' href={`/note/${note.title.replaceAll(' ', '_')}`}>
             <h5>{note.title}</h5>
           </Link>
         </Col>
 
-        {
-          <Col md={12}>
-            <div className={" around"}>
-              <NoteViewer note={note} />
-            </div>
-          </Col>
-        }
+        <Col md={12}>
+          <div className={" around"}>
+            <NoteViewer note={note} />
+          </div>
+        </Col>
+
       </Row>
     </Container>
   </>

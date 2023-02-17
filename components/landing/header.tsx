@@ -2,7 +2,6 @@ import style from "./styles/navbar.module.css";
 import headerStyle from "./styles/header.module.css";
 import Category from "../../code/model/category";
 import Link from "next/link";
-import Image from "next/image";
 
 export default ({ data }: Props) => <>
   <div className={headerStyle.header}>
@@ -20,12 +19,12 @@ export default ({ data }: Props) => <>
         <li className={style.navbar__has_megamenu}>
           <Link href="/category">دسته بندی مطالب</Link>
           <div className={style.navbar__megamenu}>
-            <div className="container-xxl">
+            <div className="container">
               <div className="row">
                 {
                   data.map(category =>
                     <>
-                      <div className="col-md-6 col-sm-12 col-lg-3">
+                      <div className="col-md-6 col-sm-12 col-lg-4 col-xl-3">
                         <Link href={`/category/${category.label.replaceAll(' ', '_')}`}>
                           <div className={`${style.megamenu__item} `}>
                             <img src={`/images/${category.avatar}`} />
