@@ -1,20 +1,21 @@
 import Category from "./category"
 
-export default interface Note{
+export default interface Note {
     id: string
     title: string
     category?: Category
+    photo?: string
     tag: any[]
-    content?: (Caption|Photo|Frame|Code|Title)[]
+    content?: (Caption | Photo | Frame | Code | Title)[]
     author: any
-    createAt:string
+    createAt: string
 }
 
 export interface RichText {
     content: RichSpan[],
-    dir?: 'rtl'|'ltr'
+    dir?: 'rtl' | 'ltr'
 }
-  
+
 export interface RichSpan {
     text: string
     style?: RichStyle
@@ -25,9 +26,9 @@ interface RichStyle {
     size?: number
     color?: string
 }
-  
+
 export type RichWeight = 'BOLD' | 'ITALIC' | 'STRIKETHROUGH' | 'UNDERLINE'
-  
+
 interface Section {
     id?: string
     type: string
@@ -55,8 +56,8 @@ export interface Code extends Section {
 }
 
 export interface Title extends Section {
-    type:'title'
+    type: 'title'
     text: string
-    header: 'h1'|'h2'|'h3'|'h4'|'h5'|'h6'
+    header: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
 }
 

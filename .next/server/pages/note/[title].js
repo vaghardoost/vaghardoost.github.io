@@ -12,6 +12,7 @@ module.exports = {
 	"meduimFont": "note_meduimFont__yRcxR",
 	"link": "note_link__N_Jxr",
 	"card": "note_card__oGU9m",
+	"card_img": "note_card_img__1ZZvJ",
 	"title": "note_title__npIjl",
 	"card_links": "note_card_links__0rN6I"
 };
@@ -137,7 +138,7 @@ _code_api_note__WEBPACK_IMPORTED_MODULE_4__ = (__webpack_async_dependencies__.th
                                             note.category?.color ?? "var(--dark-color)"
                                         ]
                                     ]
-                                ]) + " " + `${(_note_module_css__WEBPACK_IMPORTED_MODULE_10___default().card)} ${(_note_module_css__WEBPACK_IMPORTED_MODULE_10___default().meduimFont)} around margin`,
+                                ]) + " " + `${(_note_module_css__WEBPACK_IMPORTED_MODULE_10___default().card)} ${(_note_module_css__WEBPACK_IMPORTED_MODULE_10___default().meduimFont)}`,
                                 children: [
                                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                         className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
@@ -150,7 +151,7 @@ _code_api_note__WEBPACK_IMPORTED_MODULE_4__ = (__webpack_async_dependencies__.th
                                             ]
                                         ]) + " " + ((_note_module_css__WEBPACK_IMPORTED_MODULE_10___default().title) || ""),
                                         children: [
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
                                                 className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
                                                     [
                                                         "d6e6fe60bf4bb20c",
@@ -176,8 +177,31 @@ _code_api_note__WEBPACK_IMPORTED_MODULE_4__ = (__webpack_async_dependencies__.th
                                             })
                                         ]
                                     }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_note_view__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Z, {
-                                        note: note
+                                    note.photo ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                        src: `/images/${note.photo}`,
+                                        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
+                                            [
+                                                "d6e6fe60bf4bb20c",
+                                                [
+                                                    _styles_header_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"].src */ .Z.src,
+                                                    note.category?.color ?? "var(--dark-color)"
+                                                ]
+                                            ]
+                                        ]) + " " + ((_note_module_css__WEBPACK_IMPORTED_MODULE_10___default().card_img) || "")
+                                    }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {}),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
+                                            [
+                                                "d6e6fe60bf4bb20c",
+                                                [
+                                                    _styles_header_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"].src */ .Z.src,
+                                                    note.category?.color ?? "var(--dark-color)"
+                                                ]
+                                            ]
+                                        ]) + " " + "around",
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_note_view__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Z, {
+                                            note: note
+                                        })
                                     })
                                 ]
                             })

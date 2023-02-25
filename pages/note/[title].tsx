@@ -29,12 +29,19 @@ export default ({ note }: Props) => {
     <Container>
       <Row>
         <Col md={8}>
-          <div className={`${style.card} ${style.meduimFont} around margin`}>
+          <div className={`${style.card} ${style.meduimFont}`}>
             <div className={style.title}>
-              <h1>{note.title}</h1>
+              <h2>{note.title}</h2>
               <p>{new Date(Number.parseInt(note.createAt)).toLocaleDateString('fa-IR')}</p>
             </div>
-            <NoteComponent note={note} />
+            {
+              (note.photo)
+                ? <img className={style.card_img} src={`/images/${note.photo}`} />
+                : <></>
+            }
+            <div className="around">
+              <NoteComponent note={note} />
+            </div>
           </div>
         </Col>
         <Col md={4}>
