@@ -7,7 +7,7 @@ import Note from "../code/model/note";
 import Header from "../components/landing/header";
 import NoteViewer from "../components/note.view";
 
-const Home = ({ category, note }: Props) => {
+const Home = ({ category }: Props) => {
   return <>
     <Header data={category} />
     <Container>
@@ -20,18 +20,18 @@ const Home = ({ category, note }: Props) => {
           </p>
         </Col>
 
-        <Col md={12} className="center">
+        {/* <Col md={12} className="center">
           <h2 className="around">مطلب برتر</h2>
           <Link className='link' href={`/note/${note.title.replaceAll(' ', '_')}`}>
             <h5>{note.title}</h5>
           </Link>
-        </Col>
+        </Col> */}
 
-        <Col md={12}>
+        {/* <Col md={12}>
           <div className={" around"}>
             <NoteViewer note={note} />
           </div>
-        </Col>
+        </Col> */}
 
       </Row>
     </Container>
@@ -40,16 +40,16 @@ const Home = ({ category, note }: Props) => {
 
 interface Props {
   category: Category[]
-  note: Note
+  // note: Note
 }
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
   const category = await api.getCategories();
-  const { payload: note } = await api.getPinNotes();
+  // const { payload: note } = await api.getPinNotes();
   return {
     props: {
       category: category,
-      note: note
+      // note: note
     },
     revalidate: 1
   }
