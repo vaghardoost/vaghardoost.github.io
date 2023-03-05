@@ -4,7 +4,9 @@ import { useRouter } from "next/router";
 import * as api from "../../code/api/category"
 import Category from "../../code/model/category";
 import headerPhoto from "../../styles/header.png";
+
 import style from "./category.module.css"
+
 
 export default ({ category }: Props) => {
   const { isFallback } = useRouter();
@@ -21,38 +23,43 @@ export default ({ category }: Props) => {
     </>
   }
   return <>
-    <header className={`header ${style.header}`}>
-      <img className={style.icon} src={`/images/${category.avatar}`} />
-      <h1>{category.label}</h1>
-      <p>{category.description}</p>
-    </header>
-    <div className={`container ${style.container}`}>
-      <div className="row">
-        {
-          (category.notes!.length > 0)
-            ?
-            category.notes!.map(note => <>
-              <div className="col-lg-3 col-md-4 col-sm-2">
-                <div className={style.card}>
+    <div className={style.main}>
+      <header className={style.header}>
+        <img src={`/images/${category.avatar}`} className={style.header_icon} />
+        <div className={style.header_content}>
+          <h1>{category.label}</h1>
+          <p>{category.description}</p>
+        </div>
+      </header>
+      <div className={style.main_content}>
+        <div className="row">
+          {
+            (category.notes!.length > 0)
+              ?
+              category.notes?.map((note) => <>
+                <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                   <Link className="link" href={`/note/${note.title.replaceAll(' ', '_')}`}>
-                    <h5>{note.title}</h5>
+                    <div className={style.card}>
+                      {
+                        note.photo
+                          ? <img src={`/images/${note.photo}`} />
+                          : <div><p>بدون تصویر</p></div>
+                      }
+                      <h5 className="around">{note.title}</h5>
+                    </div>
                   </Link>
-                  <p>{new Date(Number.parseInt(note.createAt)).toLocaleDateString('fa-IR')}</p>
                 </div>
-              </div>
-            </>)
-            :
-            <div className="col-md-12 center">
-              <p>این دسته بندی مطلبی ندارد</p>
-            </div>
-        }
+              </>)
+              : <h4>توی این دسته بندی هنوز نوشته ای گذاشته نشده</h4>
+          }
+        </div>
       </div>
     </div>
     <style jsx>{`
-    .header {
-      background: ${category.color ?? 'var(--dark-color)'} url(${headerPhoto.src});
-    }
-    
+      header {
+        background: ${category.color ?? 'var(--header-color)'} url(${headerPhoto.src});
+        background-size: 1000px;
+      }
     `}</style>
   </>
 }

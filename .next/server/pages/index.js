@@ -105,12 +105,6 @@ __webpack_async_result__();
                     children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
                         className: (_styles_navbar_module_css__WEBPACK_IMPORTED_MODULE_3___default().navbar__list),
                         children: [
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
-                                    href: "/",
-                                    children: "صفحه اصلی"
-                                })
-                            }),
                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
                                 className: (_styles_navbar_module_css__WEBPACK_IMPORTED_MODULE_3___default().navbar__has_megamenu),
                                 children: [
@@ -159,14 +153,8 @@ __webpack_async_result__();
                             }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                    href: "#",
-                                    children: "روزمه و پروژه ها"
-                                })
-                            }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                    href: "#",
-                                    children: "ارتباط"
+                                    href: "/resume",
+                                    children: "روزمه"
                                 })
                             })
                         ]

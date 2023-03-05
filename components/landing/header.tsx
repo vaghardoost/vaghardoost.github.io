@@ -15,7 +15,6 @@ export default ({ data }: Props) => <>
 
     <nav className={style.navbar}>
       <ul className={style.navbar__list}>
-        <li><Link href="/">صفحه اصلی</Link></li>
         <li className={style.navbar__has_megamenu}>
           <Link href="/category">دسته بندی مطالب</Link>
           <div className={style.navbar__megamenu}>
@@ -42,8 +41,8 @@ export default ({ data }: Props) => <>
             </div>
           </div>
         </li>
-        <li><a href="#">روزمه و پروژه ها</a></li>
-        <li><a href="#">ارتباط</a></li>
+        <li><a href="/resume">روزمه</a></li>
+        {/* <li><a href="#">ارتباط</a></li> */}
       </ul>
     </nav>
 
