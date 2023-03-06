@@ -5,51 +5,84 @@ import * as api from "../code/api/main"
 import Category from "../code/model/category";
 import Note from "../code/model/note";
 import Header from "../components/landing/header";
-import NoteViewer from "../components/note.view";
 
-const Home = ({ category }: Props) => {
+import style from "./index.module.css";
+
+const Home = ({ category, notes }: Props) => {
   return <>
     <Header data={category} />
     <Container>
-      <Row>
-        <Col md={12} className="center">
-          <h2 className="around">درباره ما</h2>
-          <h5 className="around">این بلاگ چیست و چه هدفی را دنبال میکند؟</h5>
-          <p style={{ marginBottom: '150px' }}>
-            همون حرف هایی که توی توییتر یا تلگرام میزنن،من فقط دلم خواست اتاقم رو خودم بسازم،همین :)
-          </p>
-        </Col>
 
-        {/* <Col md={12} className="center">
-          <h2 className="around">مطلب برتر</h2>
-          <Link className='link' href={`/note/${note.title.replaceAll(' ', '_')}`}>
-            <h5>{note.title}</h5>
-          </Link>
-        </Col> */}
+      <Col md={12} className="center">
+        <h2 className="around">تاپیک</h2>
+        <p>
+          مطالب از جهت کلی توی این سیستم به قسمت های زیر تقسیم میشن
+        </p>
+      </Col>
 
-        {/* <Col md={12}>
-          <div className={" around"}>
-            <NoteViewer note={note} />
-          </div>
-        </Col> */}
+      <div className={`row ${style.cat_row}`}>
+        {
+          category.map(({ parent, label, description }) => {
+            if (parent === "" || !parent) {
+              return <div className="col-md-4">
+                <Link className="link" href={`/category/${label.replaceAll(' ', '_')}`}>
+                  <div className={style.card_cat}>
+                    <h2>{label}</h2>
+                    <p>{description}</p>
+                  </div>
+                </Link>
+              </div>
+            }
+          })
+        }
+      </div>
 
-      </Row>
+      <Col md={12} className="center">
+        <h2 className="around">نوشته های برتر</h2>
+        <p>
+          فهرست بعضی از نوشته هایی که منتشر شده
+        </p>
+      </Col>
+
+      <div className="row">
+        {
+          notes.map((note) =>
+            <div className="col-md-4">
+              <Link className="link" href={`/note/${note.title.replaceAll(' ','_')}`}>
+                <div className={style.card_note}>
+                  <img src={`/images/${note.photo}`} />
+                  <div className={style.card_note_content}>
+                    <h5>{note.title}</h5>
+                    {
+                      category.map((item) => {
+                        if (item.id === note.category!.toString()) {
+                        return <p>{item.label}</p>
+                        }
+                      })
+                    }
+                  </div>
+                </div>
+              </Link>
+            </div>
+          )
+        }
+      </div>
     </Container>
   </>
 }
 
 interface Props {
   category: Category[]
-  // note: Note
+  notes: Note[]
 }
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
   const category = await api.getCategories();
-  // const { payload: note } = await api.getPinNotes();
+  const notes = await api.getPinNotes();
   return {
     props: {
       category: category,
-      // note: note
+      notes: notes
     },
     revalidate: 1
   }

@@ -1,0 +1,46 @@
+.card_cat {
+    max-width: 350px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: var(--shadow);
+    transition: all ease 0.5s;
+}
+
+.card_cat:hover , .card_note:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0 0 10px 1px;
+}
+
+.cat_row {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card_note {
+    background-color: var(--light-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: var(--shadow);
+    margin: 50px 0;
+    transition: all ease 0.5s;
+}
+
+.card_note_content {
+    text-align: center;
+    padding: 15px 0 0 0;
+}
+
+.card_note img {
+    height: 200px;
+    object-fit: cover;
+}

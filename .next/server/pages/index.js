@@ -32,15 +32,29 @@ module.exports = {
 
 /***/ }),
 
+/***/ 9971:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"card_cat": "index_card_cat__AYuvX",
+	"card_note": "index_card_note__Y7kk0",
+	"cat_row": "index_cat_row__4EbuS",
+	"card_note_content": "index_card_note_content__Z2_ee"
+};
+
+
+/***/ }),
+
 /***/ 6454:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "C": () => (/* binding */ getCategories)
+/* harmony export */   "C": () => (/* binding */ getCategories),
+/* harmony export */   "s": () => (/* binding */ getPinNotes)
 /* harmony export */ });
-/* unused harmony export getPinNotes */
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9648);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([axios__WEBPACK_IMPORTED_MODULE_0__]);
 axios__WEBPACK_IMPORTED_MODULE_0__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
@@ -50,9 +64,17 @@ const getCategories = async ()=>{
     return data.payload;
 };
 const getPinNotes = async ()=>{
-    const id = "13446686-f4f8-48be-b373-e2553afb98ab";
-    const { data: noteResponse  } = await axios.get(`http://localhost:31374/note/${id}`);
-    return noteResponse;
+    const list = [
+        "24ae5013e83ef5dd",
+        "78ba8400bfd21fa6",
+        "cb19c000d579cb4e"
+    ];
+    const result = [];
+    for (const id of list){
+        const { data  } = await axios__WEBPACK_IMPORTED_MODULE_0__["default"].get(`http://localhost:31374/note/${id}`);
+        result.push(data.payload);
+    }
+    return result;
 };
 
 __webpack_async_result__();
@@ -105,51 +127,61 @@ __webpack_async_result__();
                     children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
                         className: (_styles_navbar_module_css__WEBPACK_IMPORTED_MODULE_3___default().navbar__list),
                         children: [
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
-                                className: (_styles_navbar_module_css__WEBPACK_IMPORTED_MODULE_3___default().navbar__has_megamenu),
-                                children: [
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
-                                        href: "/category",
-                                        children: "دسته بندی مطالب"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                        className: (_styles_navbar_module_css__WEBPACK_IMPORTED_MODULE_3___default().navbar__megamenu),
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: "container",
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                className: "row",
-                                                children: data.map((category)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+                            data.map(({ parent , label , id  })=>{
+                                if (!parent || parent === "") {
+                                    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+                                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
+                                            className: (_styles_navbar_module_css__WEBPACK_IMPORTED_MODULE_3___default().navbar__has_megamenu),
+                                            children: [
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                                    href: `/category/${label.replaceAll(" ", "_")}`,
+                                                    children: label
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                    className: (_styles_navbar_module_css__WEBPACK_IMPORTED_MODULE_3___default().navbar__megamenu),
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                        className: "container",
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                            className: "col-md-6 col-sm-12 col-lg-4 col-xl-3",
-                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
-                                                                href: `/category/${category.label.replaceAll(" ", "_")}`,
-                                                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                                    className: `${(_styles_navbar_module_css__WEBPACK_IMPORTED_MODULE_3___default().megamenu__item)} `,
-                                                                    children: [
-                                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                                                            src: `/images/${category.avatar}`
-                                                                        }),
-                                                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                                            children: [
-                                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                                                    className: (_styles_navbar_module_css__WEBPACK_IMPORTED_MODULE_3___default().megamenu__item_title),
-                                                                                    children: category.label
-                                                                                }),
-                                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                                                    className: (_styles_navbar_module_css__WEBPACK_IMPORTED_MODULE_3___default().megamenu__item_desc),
-                                                                                    children: category.description
+                                                            className: "row",
+                                                            children: data.map((category)=>{
+                                                                if (category.parent === id) {
+                                                                    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+                                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                            className: "col-md-6 col-sm-12 col-lg-4 col-xl-3",
+                                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                                                                href: `/category/${category.label.replaceAll(" ", "_")}`,
+                                                                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                                                    className: `${(_styles_navbar_module_css__WEBPACK_IMPORTED_MODULE_3___default().megamenu__item)} `,
+                                                                                    children: [
+                                                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                                                                            src: `/images/${category.avatar}`
+                                                                                        }),
+                                                                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                                                            children: [
+                                                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                                                                    className: (_styles_navbar_module_css__WEBPACK_IMPORTED_MODULE_3___default().megamenu__item_title),
+                                                                                                    children: category.label
+                                                                                                }),
+                                                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                                                                    className: (_styles_navbar_module_css__WEBPACK_IMPORTED_MODULE_3___default().megamenu__item_desc),
+                                                                                                    children: category.description
+                                                                                                })
+                                                                                            ]
+                                                                                        })
+                                                                                    ]
                                                                                 })
-                                                                            ]
+                                                                            })
                                                                         })
-                                                                    ]
-                                                                })
+                                                                    });
+                                                                }
                                                             })
                                                         })
-                                                    }))
-                                            })
+                                                    })
+                                                })
+                                            ]
                                         })
-                                    })
-                                ]
+                                    });
+                                }
                             }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
@@ -179,55 +211,126 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(358);
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _code_api_main__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6454);
-/* harmony import */ var _components_landing_header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9166);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_code_api_main__WEBPACK_IMPORTED_MODULE_2__]);
-_code_api_main__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1664);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(358);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _code_api_main__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6454);
+/* harmony import */ var _components_landing_header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9166);
+/* harmony import */ var _index_module_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(9971);
+/* harmony import */ var _index_module_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_index_module_css__WEBPACK_IMPORTED_MODULE_5__);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_code_api_main__WEBPACK_IMPORTED_MODULE_3__]);
+_code_api_main__WEBPACK_IMPORTED_MODULE_3__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
 
 
 
 
-const Home = ({ category  })=>{
+
+
+const Home = ({ category , notes  })=>{
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: [
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_landing_header__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_landing_header__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
                 data: category
             }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Container, {
-                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Row, {
-                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Col, {
+            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__.Container, {
+                children: [
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__.Col, {
                         md: 12,
                         className: "center",
                         children: [
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
                                 className: "around",
-                                children: "درباره ما"
-                            }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
-                                className: "around",
-                                children: "این بلاگ چیست و چه هدفی را دنبال میکند؟"
+                                children: "تاپیک"
                             }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                style: {
-                                    marginBottom: "150px"
-                                },
-                                children: "همون حرف هایی که توی توییتر یا تلگرام میزنن،من فقط دلم خواست اتاقم رو خودم بسازم،همین :)"
+                                children: "مطالب از جهت کلی توی این سیستم به قسمت های زیر تقسیم میشن"
                             })
                         ]
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        className: `row ${(_index_module_css__WEBPACK_IMPORTED_MODULE_5___default().cat_row)}`,
+                        children: category.map(({ parent , label , description  })=>{
+                            if (parent === "" || !parent) {
+                                return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                    className: "col-md-4",
+                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                        className: "link",
+                                        href: `/category/${label.replaceAll(" ", "_")}`,
+                                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                            className: (_index_module_css__WEBPACK_IMPORTED_MODULE_5___default().card_cat),
+                                            children: [
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                                                    children: label
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                    children: description
+                                                })
+                                            ]
+                                        })
+                                    })
+                                });
+                            }
+                        })
+                    }),
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__.Col, {
+                        md: 12,
+                        className: "center",
+                        children: [
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                                className: "around",
+                                children: "نوشته های برتر"
+                            }),
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                children: "فهرست بعضی از نوشته هایی که منتشر شده"
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        className: "row",
+                        children: notes.map((note)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: "col-md-4",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                    className: "link",
+                                    href: `/note/${note.title.replaceAll(" ", "_")}`,
+                                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        className: (_index_module_css__WEBPACK_IMPORTED_MODULE_5___default().card_note),
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                                src: `/images/${note.photo}`
+                                            }),
+                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                className: (_index_module_css__WEBPACK_IMPORTED_MODULE_5___default().card_note_content),
+                                                children: [
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
+                                                        children: note.title
+                                                    }),
+                                                    category.map((item)=>{
+                                                        if (item.id === note.category.toString()) {
+                                                            return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                                children: item.label
+                                                            });
+                                                        }
+                                                    })
+                                                ]
+                                            })
+                                        ]
+                                    })
+                                })
+                            }))
                     })
-                })
+                ]
             })
         ]
     });
 };
 const getStaticProps = async ()=>{
-    const category = await _code_api_main__WEBPACK_IMPORTED_MODULE_2__/* .getCategories */ .C();
-    // const { payload: note } = await api.getPinNotes();
+    const category = await _code_api_main__WEBPACK_IMPORTED_MODULE_3__/* .getCategories */ .C();
+    const notes = await _code_api_main__WEBPACK_IMPORTED_MODULE_3__/* .getPinNotes */ .s();
     return {
         props: {
-            category: category
+            category: category,
+            notes: notes
         },
         revalidate: 1
     };

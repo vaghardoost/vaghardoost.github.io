@@ -15,34 +15,43 @@ export default ({ data }: Props) => <>
 
     <nav className={style.navbar}>
       <ul className={style.navbar__list}>
-        <li className={style.navbar__has_megamenu}>
-          <Link href="/category">دسته بندی مطالب</Link>
-          <div className={style.navbar__megamenu}>
-            <div className="container">
-              <div className="row">
-                {
-                  data.map(category =>
-                    <>
-                      <div className="col-md-6 col-sm-12 col-lg-4 col-xl-3">
-                        <Link href={`/category/${category.label.replaceAll(' ', '_')}`}>
-                          <div className={`${style.megamenu__item} `}>
-                            <img src={`/images/${category.avatar}`} />
-                            <div>
-                              <p className={style.megamenu__item_title}>{category.label}</p>
-                              <p className={style.megamenu__item_desc}>{category.description}</p>
-                            </div>
-                          </div>
-                        </Link>
+        {
+          data.map(({ parent, label, id }) => {
+            if (!parent || parent === "") {
+              return <>
+                <li className={style.navbar__has_megamenu}>
+                  <Link href={`/category/${label.replaceAll(' ', '_')}`}>{label}</Link>
+                  <div className={style.navbar__megamenu}>
+                    <div className="container">
+                      <div className="row">
+                        {
+                          data.map(category => {
+                            if (category.parent === id) {
+                              return <>
+                                <div className="col-md-6 col-sm-12 col-lg-4 col-xl-3">
+                                  <Link href={`/category/${category.label.replaceAll(' ', '_')}`}>
+                                    <div className={`${style.megamenu__item} `}>
+                                      <img src={`/images/${category.avatar}`} />
+                                      <div>
+                                        <p className={style.megamenu__item_title}>{category.label}</p>
+                                        <p className={style.megamenu__item_desc}>{category.description}</p>
+                                      </div>
+                                    </div>
+                                  </Link>
+                                </div>
+                              </>
+                            }
+                          })
+                        }
                       </div>
-                    </>
-                  )
-                }
-              </div>
-            </div>
-          </div>
-        </li>
+                    </div>
+                  </div>
+                </li>
+              </>
+            }
+          })
+        }
         <li><a href="/resume">روزمه</a></li>
-        {/* <li><a href="#">ارتباط</a></li> */}
       </ul>
     </nav>
 

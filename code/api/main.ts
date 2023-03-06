@@ -4,14 +4,22 @@ import Category from "../model/category"
 import Note from "../model/note";
 
 
-export const getCategories = async ()=> {
+export const getCategories = async () => {
     const { data } = await axios.get<ApiResult<Category[]>>("http://localhost:31374/category");
     return data.payload;
 }
 
 export const getPinNotes = async () => {
-    const id = '13446686-f4f8-48be-b373-e2553afb98ab';
-    const {data:noteResponse} = await axios.get<ApiResult<Note>>(`http://localhost:31374/note/${id}`);
-    return noteResponse;
+    const list = [
+        '24ae5013e83ef5dd',
+        '78ba8400bfd21fa6',
+        'cb19c000d579cb4e'
+    ];
+    const result: Note[] = [];
+    for (const id of list) {
+        const { data } = await axios.get<ApiResult<Note>>(`http://localhost:31374/note/${id}`);
+        result.push(data.payload);
+    }
+    return result;
 }
 

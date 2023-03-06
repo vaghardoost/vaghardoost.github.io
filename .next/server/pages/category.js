@@ -10,8 +10,9 @@ exports.modules = {
 
 __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "U": () => (/* binding */ get),
-/* harmony export */   "p": () => (/* binding */ list)
+/* harmony export */   "U2": () => (/* binding */ get),
+/* harmony export */   "Y4": () => (/* binding */ rootlist),
+/* harmony export */   "pb": () => (/* binding */ list)
 /* harmony export */ });
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9648);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([axios__WEBPACK_IMPORTED_MODULE_0__]);
@@ -20,6 +21,16 @@ axios__WEBPACK_IMPORTED_MODULE_0__ = (__webpack_async_dependencies__.then ? (awa
 const list = async ()=>{
     const { data  } = await axios__WEBPACK_IMPORTED_MODULE_0__["default"].get("http://localhost:31374/category");
     return data;
+};
+const rootlist = async ()=>{
+    const { payload: data  } = await list();
+    const result = [];
+    data.forEach((category)=>{
+        if (!category.parent || category.parent === "") {
+            result.push(category);
+        }
+    });
+    return result;
 };
 const get = async (id)=>{
     const { data  } = await axios__WEBPACK_IMPORTED_MODULE_0__["default"].get(`http://localhost:31374/category/${id}`);
@@ -69,13 +80,16 @@ _code_api_category__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies_
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h4", {
                         className: "around center",
-                        children: "تمامی دسته بندی ها ی مطالب"
+                        children: "تقسیم بندی محتوای سایت"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__.Row, {
+                            style: {
+                                justifyContent: "center"
+                            },
                             children: list.map((cat)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                        className: "col-md-4 col-sm-12 col-lg-4",
+                                        className: "col-md-6 col-sm-12 col-lg-6",
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_5___default()), {
                                             className: "link",
                                             href: `/category/${cat.label.replaceAll(" ", "_")}`,
@@ -93,7 +107,7 @@ _code_api_category__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies_
     });
 });
 const getStaticProps = async ()=>{
-    const { payload: result  } = await _code_api_category__WEBPACK_IMPORTED_MODULE_1__/* .list */ .p();
+    const result = await _code_api_category__WEBPACK_IMPORTED_MODULE_1__/* .rootlist */ .Y4();
     return {
         props: {
             list: result
@@ -324,7 +338,7 @@ module.exports = import("axios");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [210,676,664,281], () => (__webpack_exec__(8712)));
+var __webpack_exports__ = __webpack_require__.X(0, [210,676,664,198,266], () => (__webpack_exec__(8712)));
 module.exports = __webpack_exports__;
 
 })();

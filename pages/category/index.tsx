@@ -11,12 +11,12 @@ export default ({ list }: Props) => {
     <Navbar />
     <Container>
       <h1 className='around center'>تاپیک ها</h1>
-      <h4 className='around center'>تمامی دسته بندی ها ی مطالب</h4>
+      <h4 className='around center'>تقسیم بندی محتوای سایت</h4>
       <div>
-        <Row>
+        <Row style={{ justifyContent: 'center' }}>
           {
             list.map(cat => <>
-              <div className="col-md-4 col-sm-12 col-lg-4">
+              <div className="col-md-6 col-sm-12 col-lg-6">
                 <Link className="link" href={`/category/${cat.label.replaceAll(' ', '_')}`}>
                   <Category category={cat} />
                 </Link>
@@ -35,7 +35,7 @@ interface Props {
 }
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-  const { payload: result } = await api.list()
+  const result = await api.rootlist();
   return {
     props: {
       list: result

@@ -18,7 +18,11 @@ export default ({ category, showNotes }: Props) => {
   return <>
     <div className={`${style.card}`} style={height}>
       <div style={headerStyle}>
-        <img className={style.image} src={`/images/${category.avatar}`} />
+        {
+          (category.avatar)
+            ? <img className={style.image} src={`/images/${category.avatar}`} />
+            : <></>
+        }
       </div>
       <div className={`${style.card_content} around center`}>
         <h4>{category.label}</h4>
