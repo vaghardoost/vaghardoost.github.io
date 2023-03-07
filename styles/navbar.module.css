@@ -1,9 +1,14 @@
 .navbar {
-  height: 50px;
+    /* height: 125px; */
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    background-color: var(--dark-color);
+    box-shadow: var(--shadow);
 }
 
 .navLink {
-    color: var(--dark-color);
+    color: var(--light-color);
     text-decoration: none;
     transition-duration: 500ms;
     padding: 5px 10px 0 10px;
@@ -11,6 +16,5 @@
 }
 
 .navLink:hover {
-    color: var(--dark-color);
-    font-weight: bolder;
+    color: var(--light-color);
 }

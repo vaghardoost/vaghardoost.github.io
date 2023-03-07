@@ -24,41 +24,14 @@ module.exports = {
 
 /***/ }),
 
-/***/ 1704:
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
+/***/ 909:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "U2": () => (/* binding */ get),
-/* harmony export */   "Y4": () => (/* binding */ rootlist),
-/* harmony export */   "pb": () => (/* binding */ list)
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9648);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([axios__WEBPACK_IMPORTED_MODULE_0__]);
-axios__WEBPACK_IMPORTED_MODULE_0__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
-
-const list = async ()=>{
-    const { data  } = await axios__WEBPACK_IMPORTED_MODULE_0__["default"].get("http://localhost:31374/category");
-    return data;
-};
-const rootlist = async ()=>{
-    const { payload: data  } = await list();
-    const result = [];
-    data.forEach((category)=>{
-        if (!category.parent || category.parent === "") {
-            result.push(category);
-        }
-    });
-    return result;
-};
-const get = async (id)=>{
-    const { data  } = await axios__WEBPACK_IMPORTED_MODULE_0__["default"].get(`http://localhost:31374/category/${id}`);
-    return data;
-};
-
-__webpack_async_result__();
-} catch(e) { __webpack_async_result__(e); } });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/header.8d53fe0d.png","height":800,"width":1800,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAMAAACEE47CAAAABlBMVEVubm6goKDLy9yYAAAAAnRSTlMJCd6NztUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAaSURBVHicY2BgYGBgBBOMIAwiwSIgGowZGQAA7AANEkqBFQAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":4});
 
 /***/ }),
 
@@ -649,7 +622,7 @@ module.exports = import("axios");;
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [210,676,664,198], () => (__webpack_exec__(6346)));
+var __webpack_exports__ = __webpack_require__.X(0, [210,676,664,863], () => (__webpack_exec__(6346)));
 module.exports = __webpack_exports__;
 
 })();

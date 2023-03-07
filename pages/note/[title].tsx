@@ -2,13 +2,11 @@ import { GetStaticPaths, GetStaticProps } from "next"
 import Link from "next/link"
 import headerIMG from "../../styles/header.png"
 import * as api from "../../code/api/note"
-import { Col, Container, Row } from "react-bootstrap"
 import Navbar from "../../components/layout/navbar"
 import style from "./note.module.css"
 import Note from "../../code/model/note"
 import NoteComponent from "../../components/note.view"
 import { useRouter } from "next/router"
-import Category from "../../components/layout/category"
 
 export default ({ note }: Props) => {
   const { isFallback } = useRouter();
@@ -26,51 +24,48 @@ export default ({ note }: Props) => {
   }
   return <>
     <Navbar />
-    <Container>
-      <Row>
-        <Col md={8}>
-          <div className={`${style.card} ${style.meduimFont}`}>
-            <div className={style.title}>
-              <h2>{note.title}</h2>
-              <p>{new Date(Number.parseInt(note.createAt)).toLocaleDateString('fa-IR')}</p>
-            </div>
-            {
-              (note.photo)
-                ? <img className={style.card_img} src={`/images/${note.photo}`} />
-                : <></>
-            }
-            <div className="around">
-              <NoteComponent note={note} />
-            </div>
-          </div>
-        </Col>
-        <Col md={4}>
-          {
-            (note.category)
-              ? <Category showNotes category={note.category} />
-              : <></>
-          }
-
-          <div className="sticky-top">
-            <div className={`${style.card} ${style.card_links} around`}>
-              <h4 className="around center">{note.title}</h4>
-              <ul>
-                {
-                  note.content!.map(section => {
-                    if (section.type === 'title') {
-                      return <li>
-                        <Link className={style.link} href={`#${section.text}`}> {section.text} </Link>
-                      </li>
+    <div className={style.background} style={{ background: `url(${headerIMG.src}) ${note.category?.color ?? "var(--dark-color)"}` }}>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-8">
+            <div className={`${style.card} ${style.meduimFont}`}>
+              {
+                (note.photo)
+                  ? <img className={style.card_img} src={`/images/${note.photo}`} />
+                  : <></>
+              }
+              <div className={style.title}>
+                <h2>{note.title}</h2>
+                <p>{new Date(Number.parseInt(note.createAt)).toLocaleDateString('fa-IR')}</p>
+                <p>در این نوشته خواهید خواند:</p>
+                <div className={style.title__tags}>
+                  <ul>
+                    {
+                      note.content?.map((section) => {
+                        if (section.type === "title") {
+                          return <li><Link className='link' href={`#${section.text}`}>{section.text}</Link></li>
+                        }
+                      })
                     }
-                  })
-                }
-              </ul>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="around">
+                <NoteComponent note={note} />
+              </div>
             </div>
           </div>
-
-        </Col>
-      </Row>
-    </Container>
+          <div className="col-md-4">
+            <div className={style.category_card}>
+              <img src={`/images/${note.category?.avatar}`} alt="" />
+              <h2>{note.category?.label}</h2>
+              <p>{note.category?.description}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <style jsx>{`
       .cardHeader{
         background: url(${headerIMG.src}) ${note.category?.color ?? "var(--dark-color)"};

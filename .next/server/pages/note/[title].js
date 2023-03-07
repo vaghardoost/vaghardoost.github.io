@@ -35,11 +35,14 @@ module.exports = {
 
 // Exports
 module.exports = {
+	"background": "note_background__RQH1i",
+	"category_card": "note_category_card__Wcgk_",
 	"meduimFont": "note_meduimFont__yRcxR",
 	"link": "note_link__N_Jxr",
 	"card": "note_card__oGU9m",
 	"card_img": "note_card_img__1ZZvJ",
 	"title": "note_title__npIjl",
+	"title__tags": "note_title__tags__YlihY",
 	"card_links": "note_card_links__0rN6I"
 };
 
@@ -303,15 +306,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _styles_header_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(909);
 /* harmony import */ var _code_api_note__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7271);
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(358);
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _components_layout_navbar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(9266);
-/* harmony import */ var _note_module_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(94);
-/* harmony import */ var _note_module_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_note_module_css__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _components_note_view__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(6945);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(1853);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _components_layout_category__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(7198);
+/* harmony import */ var _components_layout_navbar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(9266);
+/* harmony import */ var _note_module_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(94);
+/* harmony import */ var _note_module_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_note_module_css__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _components_note_view__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(6945);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(1853);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_7__);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_code_api_note__WEBPACK_IMPORTED_MODULE_4__]);
 _code_api_note__WEBPACK_IMPORTED_MODULE_4__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
 
@@ -323,10 +323,8 @@ _code_api_note__WEBPACK_IMPORTED_MODULE_4__ = (__webpack_async_dependencies__.th
 
 
 
-
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (({ note  })=>{
-    const { isFallback  } = (0,next_router__WEBPACK_IMPORTED_MODULE_8__.useRouter)();
+    const { isFallback  } = (0,next_router__WEBPACK_IMPORTED_MODULE_7__.useRouter)();
     if (isFallback) {
         return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
@@ -353,13 +351,42 @@ _code_api_note__WEBPACK_IMPORTED_MODULE_4__ = (__webpack_async_dependencies__.th
     }
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: [
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_layout_navbar__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z, {}),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__.Container, {
-                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__.Row, {
-                    children: [
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__.Col, {
-                            md: 8,
-                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_layout_navbar__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z, {}),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                style: {
+                    background: `url(${_styles_header_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"].src */ .Z.src}) ${note.category?.color ?? "var(--dark-color)"}`
+                },
+                className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
+                    [
+                        "d6e6fe60bf4bb20c",
+                        [
+                            _styles_header_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"].src */ .Z.src,
+                            note.category?.color ?? "var(--dark-color)"
+                        ]
+                    ]
+                ]) + " " + ((_note_module_css__WEBPACK_IMPORTED_MODULE_8___default().background) || ""),
+                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
+                        [
+                            "d6e6fe60bf4bb20c",
+                            [
+                                _styles_header_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"].src */ .Z.src,
+                                note.category?.color ?? "var(--dark-color)"
+                            ]
+                        ]
+                    ]) + " " + "container",
+                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
+                            [
+                                "d6e6fe60bf4bb20c",
+                                [
+                                    _styles_header_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"].src */ .Z.src,
+                                    note.category?.color ?? "var(--dark-color)"
+                                ]
+                            ]
+                        ]) + " " + "row",
+                        children: [
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                 className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
                                     [
                                         "d6e6fe60bf4bb20c",
@@ -368,82 +395,8 @@ _code_api_note__WEBPACK_IMPORTED_MODULE_4__ = (__webpack_async_dependencies__.th
                                             note.category?.color ?? "var(--dark-color)"
                                         ]
                                     ]
-                                ]) + " " + `${(_note_module_css__WEBPACK_IMPORTED_MODULE_10___default().card)} ${(_note_module_css__WEBPACK_IMPORTED_MODULE_10___default().meduimFont)}`,
-                                children: [
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
-                                            [
-                                                "d6e6fe60bf4bb20c",
-                                                [
-                                                    _styles_header_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"].src */ .Z.src,
-                                                    note.category?.color ?? "var(--dark-color)"
-                                                ]
-                                            ]
-                                        ]) + " " + ((_note_module_css__WEBPACK_IMPORTED_MODULE_10___default().title) || ""),
-                                        children: [
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
-                                                className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
-                                                    [
-                                                        "d6e6fe60bf4bb20c",
-                                                        [
-                                                            _styles_header_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"].src */ .Z.src,
-                                                            note.category?.color ?? "var(--dark-color)"
-                                                        ]
-                                                    ]
-                                                ]),
-                                                children: note.title
-                                            }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
-                                                    [
-                                                        "d6e6fe60bf4bb20c",
-                                                        [
-                                                            _styles_header_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"].src */ .Z.src,
-                                                            note.category?.color ?? "var(--dark-color)"
-                                                        ]
-                                                    ]
-                                                ]),
-                                                children: new Date(Number.parseInt(note.createAt)).toLocaleDateString("fa-IR")
-                                            })
-                                        ]
-                                    }),
-                                    note.photo ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        src: `/images/${note.photo}`,
-                                        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
-                                            [
-                                                "d6e6fe60bf4bb20c",
-                                                [
-                                                    _styles_header_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"].src */ .Z.src,
-                                                    note.category?.color ?? "var(--dark-color)"
-                                                ]
-                                            ]
-                                        ]) + " " + ((_note_module_css__WEBPACK_IMPORTED_MODULE_10___default().card_img) || "")
-                                    }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {}),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
-                                            [
-                                                "d6e6fe60bf4bb20c",
-                                                [
-                                                    _styles_header_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"].src */ .Z.src,
-                                                    note.category?.color ?? "var(--dark-color)"
-                                                ]
-                                            ]
-                                        ]) + " " + "around",
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_note_view__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Z, {
-                                            note: note
-                                        })
-                                    })
-                                ]
-                            })
-                        }),
-                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__.Col, {
-                            md: 4,
-                            children: [
-                                note.category ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_layout_category__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Z, {
-                                    showNotes: true,
-                                    category: note.category
-                                }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {}),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                ]) + " " + "col-md-8",
+                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                     className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
                                         [
                                             "d6e6fe60bf4bb20c",
@@ -452,71 +405,191 @@ _code_api_note__WEBPACK_IMPORTED_MODULE_4__ = (__webpack_async_dependencies__.th
                                                 note.category?.color ?? "var(--dark-color)"
                                             ]
                                         ]
-                                    ]) + " " + "sticky-top",
-                                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
-                                            [
-                                                "d6e6fe60bf4bb20c",
+                                    ]) + " " + `${(_note_module_css__WEBPACK_IMPORTED_MODULE_8___default().card)} ${(_note_module_css__WEBPACK_IMPORTED_MODULE_8___default().meduimFont)}`,
+                                    children: [
+                                        note.photo ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                            src: `/images/${note.photo}`,
+                                            className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
                                                 [
-                                                    _styles_header_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"].src */ .Z.src,
-                                                    note.category?.color ?? "var(--dark-color)"
+                                                    "d6e6fe60bf4bb20c",
+                                                    [
+                                                        _styles_header_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"].src */ .Z.src,
+                                                        note.category?.color ?? "var(--dark-color)"
+                                                    ]
                                                 ]
-                                            ]
-                                        ]) + " " + `${(_note_module_css__WEBPACK_IMPORTED_MODULE_10___default().card)} ${(_note_module_css__WEBPACK_IMPORTED_MODULE_10___default().card_links)} around`,
-                                        children: [
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h4", {
-                                                className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
+                                            ]) + " " + ((_note_module_css__WEBPACK_IMPORTED_MODULE_8___default().card_img) || "")
+                                        }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {}),
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                            className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
+                                                [
+                                                    "d6e6fe60bf4bb20c",
                                                     [
-                                                        "d6e6fe60bf4bb20c",
-                                                        [
-                                                            _styles_header_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"].src */ .Z.src,
-                                                            note.category?.color ?? "var(--dark-color)"
-                                                        ]
+                                                        _styles_header_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"].src */ .Z.src,
+                                                        note.category?.color ?? "var(--dark-color)"
                                                     ]
-                                                ]) + " " + "around center",
-                                                children: note.title
-                                            }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ul", {
-                                                className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
-                                                    [
-                                                        "d6e6fe60bf4bb20c",
+                                                ]
+                                            ]) + " " + ((_note_module_css__WEBPACK_IMPORTED_MODULE_8___default().title) || ""),
+                                            children: [
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                                                    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
                                                         [
-                                                            _styles_header_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"].src */ .Z.src,
-                                                            note.category?.color ?? "var(--dark-color)"
+                                                            "d6e6fe60bf4bb20c",
+                                                            [
+                                                                _styles_header_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"].src */ .Z.src,
+                                                                note.category?.color ?? "var(--dark-color)"
+                                                            ]
                                                         ]
-                                                    ]
-                                                ]),
-                                                children: note.content.map((section)=>{
-                                                    if (section.type === "title") {
-                                                        return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                            className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
+                                                    ]),
+                                                    children: note.title
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
+                                                        [
+                                                            "d6e6fe60bf4bb20c",
+                                                            [
+                                                                _styles_header_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"].src */ .Z.src,
+                                                                note.category?.color ?? "var(--dark-color)"
+                                                            ]
+                                                        ]
+                                                    ]),
+                                                    children: new Date(Number.parseInt(note.createAt)).toLocaleDateString("fa-IR")
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
+                                                        [
+                                                            "d6e6fe60bf4bb20c",
+                                                            [
+                                                                _styles_header_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"].src */ .Z.src,
+                                                                note.category?.color ?? "var(--dark-color)"
+                                                            ]
+                                                        ]
+                                                    ]),
+                                                    children: "در این نوشته خواهید خواند:"
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
+                                                        [
+                                                            "d6e6fe60bf4bb20c",
+                                                            [
+                                                                _styles_header_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"].src */ .Z.src,
+                                                                note.category?.color ?? "var(--dark-color)"
+                                                            ]
+                                                        ]
+                                                    ]) + " " + ((_note_module_css__WEBPACK_IMPORTED_MODULE_8___default().title__tags) || ""),
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ul", {
+                                                        className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
+                                                            [
+                                                                "d6e6fe60bf4bb20c",
                                                                 [
-                                                                    "d6e6fe60bf4bb20c",
-                                                                    [
-                                                                        _styles_header_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"].src */ .Z.src,
-                                                                        note.category?.color ?? "var(--dark-color)"
-                                                                    ]
+                                                                    _styles_header_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"].src */ .Z.src,
+                                                                    note.category?.color ?? "var(--dark-color)"
                                                                 ]
-                                                            ]),
-                                                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
-                                                                className: (_note_module_css__WEBPACK_IMPORTED_MODULE_10___default().link),
-                                                                href: `#${section.text}`,
-                                                                children: [
-                                                                    " ",
-                                                                    section.text,
-                                                                    " "
-                                                                ]
-                                                            })
-                                                        });
-                                                    }
+                                                            ]
+                                                        ]),
+                                                        children: note.content?.map((section)=>{
+                                                            if (section.type === "title") {
+                                                                return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                                    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
+                                                                        [
+                                                                            "d6e6fe60bf4bb20c",
+                                                                            [
+                                                                                _styles_header_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"].src */ .Z.src,
+                                                                                note.category?.color ?? "var(--dark-color)"
+                                                                            ]
+                                                                        ]
+                                                                    ]),
+                                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
+                                                                        className: "link",
+                                                                        href: `#${section.text}`,
+                                                                        children: section.text
+                                                                    })
+                                                                });
+                                                            }
+                                                        })
+                                                    })
                                                 })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                            className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
+                                                [
+                                                    "d6e6fe60bf4bb20c",
+                                                    [
+                                                        _styles_header_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"].src */ .Z.src,
+                                                        note.category?.color ?? "var(--dark-color)"
+                                                    ]
+                                                ]
+                                            ]) + " " + "around",
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_note_view__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z, {
+                                                note: note
                                             })
-                                        ]
-                                    })
+                                        })
+                                    ]
                                 })
-                            ]
-                        })
-                    ]
+                            }),
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
+                                    [
+                                        "d6e6fe60bf4bb20c",
+                                        [
+                                            _styles_header_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"].src */ .Z.src,
+                                            note.category?.color ?? "var(--dark-color)"
+                                        ]
+                                    ]
+                                ]) + " " + "col-md-4",
+                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
+                                        [
+                                            "d6e6fe60bf4bb20c",
+                                            [
+                                                _styles_header_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"].src */ .Z.src,
+                                                note.category?.color ?? "var(--dark-color)"
+                                            ]
+                                        ]
+                                    ]) + " " + ((_note_module_css__WEBPACK_IMPORTED_MODULE_8___default().category_card) || ""),
+                                    children: [
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                            src: `/images/${note.category?.avatar}`,
+                                            alt: "",
+                                            className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
+                                                [
+                                                    "d6e6fe60bf4bb20c",
+                                                    [
+                                                        _styles_header_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"].src */ .Z.src,
+                                                        note.category?.color ?? "var(--dark-color)"
+                                                    ]
+                                                ]
+                                            ])
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                                            className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
+                                                [
+                                                    "d6e6fe60bf4bb20c",
+                                                    [
+                                                        _styles_header_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"].src */ .Z.src,
+                                                        note.category?.color ?? "var(--dark-color)"
+                                                    ]
+                                                ]
+                                            ]),
+                                            children: note.category?.label
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                            className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
+                                                [
+                                                    "d6e6fe60bf4bb20c",
+                                                    [
+                                                        _styles_header_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"].src */ .Z.src,
+                                                        note.category?.color ?? "var(--dark-color)"
+                                                    ]
+                                                ]
+                                            ]),
+                                            children: note.category?.description
+                                        })
+                                    ]
+                                })
+                            })
+                        ]
+                    })
                 })
             }),
             react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default()), {
@@ -782,14 +855,6 @@ module.exports = require("react");
 
 /***/ }),
 
-/***/ 358:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("react-bootstrap");
-
-/***/ }),
-
 /***/ 6405:
 /***/ ((module) => {
 
@@ -829,7 +894,7 @@ module.exports = import("axios");;
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [210,676,664,198,266], () => (__webpack_exec__(2571)));
+var __webpack_exports__ = __webpack_require__.X(0, [210,676,664,229], () => (__webpack_exec__(2571)));
 module.exports = __webpack_exports__;
 
 })();

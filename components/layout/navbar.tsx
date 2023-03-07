@@ -1,23 +1,23 @@
 import Link from "next/link"
-import { Container } from "react-bootstrap"
 import style from "../../styles/navbar.module.css"
 
-export default ()=> {
+export default () => {
   return <>
     <div className={style.navbar}>
-      <Container className='nav'>
+      <div className='container-fluid nav'>
         <ul>
           <li> <Link className={style.navLink} href="/">صفحه ی اصلی</Link> </li>
           <li> <Link className={style.navLink} href="/category">دسته بندی ها</Link> </li>
-          <li> <Link className={style.navLink} href="#">درباره ما</Link> </li>
+          <li> <Link className={style.navLink} href="/resume">رزومه</Link> </li>
         </ul>
-      </Container>
+      </div>
     </div>
 
     <style jsx>
       {`
         li {
           display: inline-flex;
+          padding:10px;
         }
       `}
     </style>
