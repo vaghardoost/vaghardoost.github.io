@@ -7,6 +7,7 @@ import style from "./note.module.css"
 import Note from "../../code/model/note"
 import NoteComponent from "../../components/note.view"
 import { useRouter } from "next/router"
+import Head from "next/head"
 
 export default ({ note }: Props) => {
   const { isFallback } = useRouter();
@@ -23,8 +24,14 @@ export default ({ note }: Props) => {
     </>
   }
   return <>
-    <Navbar />
-    <div className={style.background} style={{ background: `url(${headerIMG.src}) ${note.category?.color ?? "var(--dark-color)"}` }}>
+  <Head>
+    <title>{note.title}</title>
+  </Head>
+    <div className={style.background} style={{
+      background: `url(${headerIMG.src}) ${note.category?.color ?? "var(--dark-color)"}`,
+      backgroundSize: '950px'
+    }}>
+      <Navbar />
       <div className="container">
         <div className="row">
           <div className="col-md-8">
@@ -73,7 +80,7 @@ export default ({ note }: Props) => {
         text-align: center;
         border-radius: 15px 15px 0 0;
         background-position: center;
-        background-size: 600px;
+        background-size: 500px;
         margin-bottom: 40px;
       }
     `}</style>

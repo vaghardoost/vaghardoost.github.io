@@ -15,7 +15,7 @@
 }
 
 body {
-  background-image: url('18240979_v748-toon-103.jpg');
+  background: url('images/bedge-grunge.png') var(--light-color);
   font: 12pt/2 Yekan, sans-serif;
 }
 

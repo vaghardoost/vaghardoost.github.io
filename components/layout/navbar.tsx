@@ -1,9 +1,9 @@
 import Link from "next/link"
-import style from "../../styles/navbar.module.css"
+import style from "./navbar.module.css"
 
 export default () => {
   return <>
-    <div className={style.navbar}>
+    <div className={style.navbar + ' _navbar'}>
       <div className='container-fluid nav'>
         <ul>
           <li> <Link className={style.navLink} href="/">صفحه ی اصلی</Link> </li>
@@ -12,14 +12,5 @@ export default () => {
         </ul>
       </div>
     </div>
-
-    <style jsx>
-      {`
-        li {
-          display: inline-flex;
-          padding:10px;
-        }
-      `}
-    </style>
   </>
 }

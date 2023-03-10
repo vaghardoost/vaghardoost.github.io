@@ -8,7 +8,7 @@ export default ({ category, showNotes }: Props) => {
   const headerStyle: CSSProperties = {
     backgroundPosition: 'center',
     background: `url(${headerIMG.src}) ${category.color ?? 'var(--header-color)'}`,
-    backgroundSize: '600px',
+    backgroundSize: '850px',
     height: '125px',
     textAlign: 'center',
     borderRadius: '15px 15px 0 0',

@@ -5,9 +5,13 @@ import { Container, Row } from "react-bootstrap"
 import Navbar from "../../components/layout/navbar"
 import Category from "../../components/layout/category"
 import Link from "next/link"
+import Head from "next/head"
 
 export default ({ list }: Props) => {
   return <>
+    <Head>
+      <title>فهرست دسته بندی ها</title>
+    </Head>
     <Navbar />
     <Container>
       <h1 className='around center'>تاپیک ها</h1>

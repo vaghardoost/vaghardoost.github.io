@@ -23,18 +23,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 909:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/header.8d53fe0d.png","height":800,"width":1800,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAMAAACEE47CAAAABlBMVEVubm6goKDLy9yYAAAAAnRSTlMJCd6NztUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAaSURBVHicY2BgYGBgBBOMIAwiwSIgGowZGQAA7AANEkqBFQAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":4});
-
-/***/ }),
-
-/***/ 1239:
+/***/ 9746:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -52,9 +41,9 @@ var jsx_runtime_ = __webpack_require__(997);
 // EXTERNAL MODULE: external "styled-jsx/style"
 var style_ = __webpack_require__(9816);
 var style_default = /*#__PURE__*/__webpack_require__.n(style_);
-;// CONCATENATED MODULE: external "next/head"
-const head_namespaceObject = require("next/head");
-var head_default = /*#__PURE__*/__webpack_require__.n(head_namespaceObject);
+// EXTERNAL MODULE: external "next/head"
+var head_ = __webpack_require__(968);
+var head_default = /*#__PURE__*/__webpack_require__.n(head_);
 // EXTERNAL MODULE: ./pages/resume/resume.module.css
 var resume_module = __webpack_require__(5536);
 var resume_module_default = /*#__PURE__*/__webpack_require__.n(resume_module);
@@ -64,8 +53,8 @@ var resume_module_default = /*#__PURE__*/__webpack_require__.n(resume_module);
 /* harmony default export */ const edu = ({"src":"/_next/static/media/edu.a4f396d6.svg","height":48,"width":48});
 ;// CONCATENATED MODULE: ./styles/images/brain.svg
 /* harmony default export */ const brain = ({"src":"/_next/static/media/brain.9f4e9c34.svg","height":48,"width":48});
-// EXTERNAL MODULE: ./styles/header.png
-var header = __webpack_require__(909);
+;// CONCATENATED MODULE: ./styles/images/bedge-grunge.png
+/* harmony default export */ const bedge_grunge = ({"src":"/_next/static/media/bedge-grunge.f28e5125.png","height":375,"width":588,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAMAAABPT11nAAAABlBMVEXCu6/CvK8XaivFAAAAAnRSTlNUU1omVSYAAAAJcEhZcwAACxMAAAsTAQCanBgAAAASSURBVHicY2CAAUY4CzsfKAoAAGMAAxW+3CQAAAAASUVORK5CYII=","blurWidth":8,"blurHeight":5});
 ;// CONCATENATED MODULE: ./pages/resume/index.tsx
 
 
@@ -82,9 +71,9 @@ var header = __webpack_require__(909);
                 children: /*#__PURE__*/ jsx_runtime_.jsx("title", {
                     className: style_default().dynamic([
                         [
-                            "b409d9060c1aed1a",
+                            "7198732ef39d346a",
                             [
-                                header/* default.src */.Z.src
+                                bedge_grunge.src
                             ]
                         ]
                     ]),
@@ -94,36 +83,36 @@ var header = __webpack_require__(909);
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                 className: style_default().dynamic([
                     [
-                        "b409d9060c1aed1a",
+                        "7198732ef39d346a",
                         [
-                            header/* default.src */.Z.src
+                            bedge_grunge.src
                         ]
                     ]
                 ]) + " " + "container",
                 children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                     className: style_default().dynamic([
                         [
-                            "b409d9060c1aed1a",
+                            "7198732ef39d346a",
                             [
-                                header/* default.src */.Z.src
+                                bedge_grunge.src
                             ]
                         ]
                     ]) + " " + "row",
                     children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: style_default().dynamic([
                             [
-                                "b409d9060c1aed1a",
+                                "7198732ef39d346a",
                                 [
-                                    header/* default.src */.Z.src
+                                    bedge_grunge.src
                                 ]
                             ]
                         ]) + " " + "col-md-12",
                         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                             className: style_default().dynamic([
                                 [
-                                    "b409d9060c1aed1a",
+                                    "7198732ef39d346a",
                                     [
-                                        header/* default.src */.Z.src
+                                        bedge_grunge.src
                                     ]
                                 ]
                             ]) + " " + ((resume_module_default()).card || ""),
@@ -131,9 +120,9 @@ var header = __webpack_require__(909);
                                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                     className: style_default().dynamic([
                                         [
-                                            "b409d9060c1aed1a",
+                                            "7198732ef39d346a",
                                             [
-                                                header/* default.src */.Z.src
+                                                bedge_grunge.src
                                             ]
                                         ]
                                     ]) + " " + ((resume_module_default()).card_bar || ""),
@@ -141,9 +130,9 @@ var header = __webpack_require__(909);
                                         /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
                                             className: style_default().dynamic([
                                                 [
-                                                    "b409d9060c1aed1a",
+                                                    "7198732ef39d346a",
                                                     [
-                                                        header/* default.src */.Z.src
+                                                        bedge_grunge.src
                                                     ]
                                                 ]
                                             ]),
@@ -151,9 +140,9 @@ var header = __webpack_require__(909);
                                                 /*#__PURE__*/ jsx_runtime_.jsx("li", {
                                                     className: style_default().dynamic([
                                                         [
-                                                            "b409d9060c1aed1a",
+                                                            "7198732ef39d346a",
                                                             [
-                                                                header/* default.src */.Z.src
+                                                                bedge_grunge.src
                                                             ]
                                                         ]
                                                     ]),
@@ -161,9 +150,9 @@ var header = __webpack_require__(909);
                                                         href: "#",
                                                         className: style_default().dynamic([
                                                             [
-                                                                "b409d9060c1aed1a",
+                                                                "7198732ef39d346a",
                                                                 [
-                                                                    header/* default.src */.Z.src
+                                                                    bedge_grunge.src
                                                                 ]
                                                             ]
                                                         ]) + " " + "link",
@@ -173,9 +162,9 @@ var header = __webpack_require__(909);
                                                 /*#__PURE__*/ jsx_runtime_.jsx("li", {
                                                     className: style_default().dynamic([
                                                         [
-                                                            "b409d9060c1aed1a",
+                                                            "7198732ef39d346a",
                                                             [
-                                                                header/* default.src */.Z.src
+                                                                bedge_grunge.src
                                                             ]
                                                         ]
                                                     ]),
@@ -183,9 +172,9 @@ var header = __webpack_require__(909);
                                                         href: "#",
                                                         className: style_default().dynamic([
                                                             [
-                                                                "b409d9060c1aed1a",
+                                                                "7198732ef39d346a",
                                                                 [
-                                                                    header/* default.src */.Z.src
+                                                                    bedge_grunge.src
                                                                 ]
                                                             ]
                                                         ]) + " " + "link",
@@ -195,9 +184,9 @@ var header = __webpack_require__(909);
                                                 /*#__PURE__*/ jsx_runtime_.jsx("li", {
                                                     className: style_default().dynamic([
                                                         [
-                                                            "b409d9060c1aed1a",
+                                                            "7198732ef39d346a",
                                                             [
-                                                                header/* default.src */.Z.src
+                                                                bedge_grunge.src
                                                             ]
                                                         ]
                                                     ]),
@@ -205,9 +194,9 @@ var header = __webpack_require__(909);
                                                         href: "#",
                                                         className: style_default().dynamic([
                                                             [
-                                                                "b409d9060c1aed1a",
+                                                                "7198732ef39d346a",
                                                                 [
-                                                                    header/* default.src */.Z.src
+                                                                    bedge_grunge.src
                                                                 ]
                                                             ]
                                                         ]) + " " + "link",
@@ -217,9 +206,9 @@ var header = __webpack_require__(909);
                                                 /*#__PURE__*/ jsx_runtime_.jsx("li", {
                                                     className: style_default().dynamic([
                                                         [
-                                                            "b409d9060c1aed1a",
+                                                            "7198732ef39d346a",
                                                             [
-                                                                header/* default.src */.Z.src
+                                                                bedge_grunge.src
                                                             ]
                                                         ]
                                                     ]),
@@ -227,9 +216,9 @@ var header = __webpack_require__(909);
                                                         href: "#",
                                                         className: style_default().dynamic([
                                                             [
-                                                                "b409d9060c1aed1a",
+                                                                "7198732ef39d346a",
                                                                 [
-                                                                    header/* default.src */.Z.src
+                                                                    bedge_grunge.src
                                                                 ]
                                                             ]
                                                         ]) + " " + "link",
@@ -241,18 +230,18 @@ var header = __webpack_require__(909);
                                         /*#__PURE__*/ jsx_runtime_.jsx("ul", {
                                             className: style_default().dynamic([
                                                 [
-                                                    "b409d9060c1aed1a",
+                                                    "7198732ef39d346a",
                                                     [
-                                                        header/* default.src */.Z.src
+                                                        bedge_grunge.src
                                                     ]
                                                 ]
                                             ]),
                                             children: /*#__PURE__*/ jsx_runtime_.jsx("li", {
                                                 className: style_default().dynamic([
                                                     [
-                                                        "b409d9060c1aed1a",
+                                                        "7198732ef39d346a",
                                                         [
-                                                            header/* default.src */.Z.src
+                                                            bedge_grunge.src
                                                         ]
                                                     ]
                                                 ]),
@@ -260,9 +249,9 @@ var header = __webpack_require__(909);
                                                     href: "#",
                                                     className: style_default().dynamic([
                                                         [
-                                                            "b409d9060c1aed1a",
+                                                            "7198732ef39d346a",
                                                             [
-                                                                header/* default.src */.Z.src
+                                                                bedge_grunge.src
                                                             ]
                                                         ]
                                                     ]) + " " + "link",
@@ -275,18 +264,18 @@ var header = __webpack_require__(909);
                                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                     className: style_default().dynamic([
                                         [
-                                            "b409d9060c1aed1a",
+                                            "7198732ef39d346a",
                                             [
-                                                header/* default.src */.Z.src
+                                                bedge_grunge.src
                                             ]
                                         ]
                                     ]) + " " + ((resume_module_default()).card_header || ""),
                                     children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                         className: style_default().dynamic([
                                             [
-                                                "b409d9060c1aed1a",
+                                                "7198732ef39d346a",
                                                 [
-                                                    header/* default.src */.Z.src
+                                                    bedge_grunge.src
                                                 ]
                                             ]
                                         ]) + " " + "row",
@@ -294,9 +283,9 @@ var header = __webpack_require__(909);
                                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                 className: style_default().dynamic([
                                                     [
-                                                        "b409d9060c1aed1a",
+                                                        "7198732ef39d346a",
                                                         [
-                                                            header/* default.src */.Z.src
+                                                            bedge_grunge.src
                                                         ]
                                                     ]
                                                 ]) + " " + "col-md-4",
@@ -305,9 +294,9 @@ var header = __webpack_require__(909);
                                                     alt: "",
                                                     className: style_default().dynamic([
                                                         [
-                                                            "b409d9060c1aed1a",
+                                                            "7198732ef39d346a",
                                                             [
-                                                                header/* default.src */.Z.src
+                                                                bedge_grunge.src
                                                             ]
                                                         ]
                                                     ]) + " " + ((resume_module_default()).card_img || "")
@@ -316,18 +305,18 @@ var header = __webpack_require__(909);
                                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                 className: style_default().dynamic([
                                                     [
-                                                        "b409d9060c1aed1a",
+                                                        "7198732ef39d346a",
                                                         [
-                                                            header/* default.src */.Z.src
+                                                            bedge_grunge.src
                                                         ]
                                                     ]
                                                 ]) + " " + "col-md-8",
                                                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                                     className: style_default().dynamic([
                                                         [
-                                                            "b409d9060c1aed1a",
+                                                            "7198732ef39d346a",
                                                             [
-                                                                header/* default.src */.Z.src
+                                                                bedge_grunge.src
                                                             ]
                                                         ]
                                                     ]) + " " + ((resume_module_default()).card_content || ""),
@@ -335,9 +324,9 @@ var header = __webpack_require__(909);
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h6", {
                                                             className: style_default().dynamic([
                                                                 [
-                                                                    "b409d9060c1aed1a",
+                                                                    "7198732ef39d346a",
                                                                     [
-                                                                        header/* default.src */.Z.src
+                                                                        bedge_grunge.src
                                                                     ]
                                                                 ]
                                                             ]),
@@ -346,9 +335,9 @@ var header = __webpack_require__(909);
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h1", {
                                                             className: style_default().dynamic([
                                                                 [
-                                                                    "b409d9060c1aed1a",
+                                                                    "7198732ef39d346a",
                                                                     [
-                                                                        header/* default.src */.Z.src
+                                                                        bedge_grunge.src
                                                                     ]
                                                                 ]
                                                             ]),
@@ -363,9 +352,9 @@ var header = __webpack_require__(909);
                                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                     className: style_default().dynamic([
                                         [
-                                            "b409d9060c1aed1a",
+                                            "7198732ef39d346a",
                                             [
-                                                header/* default.src */.Z.src
+                                                bedge_grunge.src
                                             ]
                                         ]
                                     ]),
@@ -373,9 +362,9 @@ var header = __webpack_require__(909);
                                         /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                             className: style_default().dynamic([
                                                 [
-                                                    "b409d9060c1aed1a",
+                                                    "7198732ef39d346a",
                                                     [
-                                                        header/* default.src */.Z.src
+                                                        bedge_grunge.src
                                                     ]
                                                 ]
                                             ]) + " " + ((resume_module_default()).card_item || ""),
@@ -383,9 +372,9 @@ var header = __webpack_require__(909);
                                                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                                     className: style_default().dynamic([
                                                         [
-                                                            "b409d9060c1aed1a",
+                                                            "7198732ef39d346a",
                                                             [
-                                                                header/* default.src */.Z.src
+                                                                bedge_grunge.src
                                                             ]
                                                         ]
                                                     ]) + " " + ((resume_module_default()).card_item_icon || ""),
@@ -395,9 +384,9 @@ var header = __webpack_require__(909);
                                                             alt: "",
                                                             className: style_default().dynamic([
                                                                 [
-                                                                    "b409d9060c1aed1a",
+                                                                    "7198732ef39d346a",
                                                                     [
-                                                                        header/* default.src */.Z.src
+                                                                        bedge_grunge.src
                                                                     ]
                                                                 ]
                                                             ])
@@ -405,9 +394,9 @@ var header = __webpack_require__(909);
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h3", {
                                                             className: style_default().dynamic([
                                                                 [
-                                                                    "b409d9060c1aed1a",
+                                                                    "7198732ef39d346a",
                                                                     [
-                                                                        header/* default.src */.Z.src
+                                                                        bedge_grunge.src
                                                                     ]
                                                                 ]
                                                             ]),
@@ -418,18 +407,18 @@ var header = __webpack_require__(909);
                                                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                     className: style_default().dynamic([
                                                         [
-                                                            "b409d9060c1aed1a",
+                                                            "7198732ef39d346a",
                                                             [
-                                                                header/* default.src */.Z.src
+                                                                bedge_grunge.src
                                                             ]
                                                         ]
                                                     ]) + " " + ((resume_module_default()).card_item_content || ""),
                                                     children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
                                                         className: style_default().dynamic([
                                                             [
-                                                                "b409d9060c1aed1a",
+                                                                "7198732ef39d346a",
                                                                 [
-                                                                    header/* default.src */.Z.src
+                                                                    bedge_grunge.src
                                                                 ]
                                                             ]
                                                         ]),
@@ -438,9 +427,9 @@ var header = __webpack_require__(909);
                                                             /*#__PURE__*/ jsx_runtime_.jsx("br", {
                                                                 className: style_default().dynamic([
                                                                     [
-                                                                        "b409d9060c1aed1a",
+                                                                        "7198732ef39d346a",
                                                                         [
-                                                                            header/* default.src */.Z.src
+                                                                            bedge_grunge.src
                                                                         ]
                                                                     ]
                                                                 ])
@@ -454,9 +443,9 @@ var header = __webpack_require__(909);
                                         /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                             className: style_default().dynamic([
                                                 [
-                                                    "b409d9060c1aed1a",
+                                                    "7198732ef39d346a",
                                                     [
-                                                        header/* default.src */.Z.src
+                                                        bedge_grunge.src
                                                     ]
                                                 ]
                                             ]) + " " + ((resume_module_default()).card_item || ""),
@@ -464,9 +453,9 @@ var header = __webpack_require__(909);
                                                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                                     className: style_default().dynamic([
                                                         [
-                                                            "b409d9060c1aed1a",
+                                                            "7198732ef39d346a",
                                                             [
-                                                                header/* default.src */.Z.src
+                                                                bedge_grunge.src
                                                             ]
                                                         ]
                                                     ]) + " " + ((resume_module_default()).card_item_icon || ""),
@@ -476,9 +465,9 @@ var header = __webpack_require__(909);
                                                             alt: "",
                                                             className: style_default().dynamic([
                                                                 [
-                                                                    "b409d9060c1aed1a",
+                                                                    "7198732ef39d346a",
                                                                     [
-                                                                        header/* default.src */.Z.src
+                                                                        bedge_grunge.src
                                                                     ]
                                                                 ]
                                                             ])
@@ -486,9 +475,9 @@ var header = __webpack_require__(909);
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h3", {
                                                             className: style_default().dynamic([
                                                                 [
-                                                                    "b409d9060c1aed1a",
+                                                                    "7198732ef39d346a",
                                                                     [
-                                                                        header/* default.src */.Z.src
+                                                                        bedge_grunge.src
                                                                     ]
                                                                 ]
                                                             ]),
@@ -499,18 +488,18 @@ var header = __webpack_require__(909);
                                                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                     className: style_default().dynamic([
                                                         [
-                                                            "b409d9060c1aed1a",
+                                                            "7198732ef39d346a",
                                                             [
-                                                                header/* default.src */.Z.src
+                                                                bedge_grunge.src
                                                             ]
                                                         ]
                                                     ]) + " " + ((resume_module_default()).card_item_content || ""),
                                                     children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
                                                         className: style_default().dynamic([
                                                             [
-                                                                "b409d9060c1aed1a",
+                                                                "7198732ef39d346a",
                                                                 [
-                                                                    header/* default.src */.Z.src
+                                                                    bedge_grunge.src
                                                                 ]
                                                             ]
                                                         ]),
@@ -519,9 +508,9 @@ var header = __webpack_require__(909);
                                                             /*#__PURE__*/ jsx_runtime_.jsx("br", {
                                                                 className: style_default().dynamic([
                                                                     [
-                                                                        "b409d9060c1aed1a",
+                                                                        "7198732ef39d346a",
                                                                         [
-                                                                            header/* default.src */.Z.src
+                                                                            bedge_grunge.src
                                                                         ]
                                                                     ]
                                                                 ])
@@ -530,9 +519,9 @@ var header = __webpack_require__(909);
                                                             /*#__PURE__*/ jsx_runtime_.jsx("br", {
                                                                 className: style_default().dynamic([
                                                                     [
-                                                                        "b409d9060c1aed1a",
+                                                                        "7198732ef39d346a",
                                                                         [
-                                                                            header/* default.src */.Z.src
+                                                                            bedge_grunge.src
                                                                         ]
                                                                     ]
                                                                 ])
@@ -546,9 +535,9 @@ var header = __webpack_require__(909);
                                         /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                             className: style_default().dynamic([
                                                 [
-                                                    "b409d9060c1aed1a",
+                                                    "7198732ef39d346a",
                                                     [
-                                                        header/* default.src */.Z.src
+                                                        bedge_grunge.src
                                                     ]
                                                 ]
                                             ]) + " " + ((resume_module_default()).card_item || ""),
@@ -556,9 +545,9 @@ var header = __webpack_require__(909);
                                                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                                     className: style_default().dynamic([
                                                         [
-                                                            "b409d9060c1aed1a",
+                                                            "7198732ef39d346a",
                                                             [
-                                                                header/* default.src */.Z.src
+                                                                bedge_grunge.src
                                                             ]
                                                         ]
                                                     ]) + " " + ((resume_module_default()).card_item_icon || ""),
@@ -568,9 +557,9 @@ var header = __webpack_require__(909);
                                                             alt: "",
                                                             className: style_default().dynamic([
                                                                 [
-                                                                    "b409d9060c1aed1a",
+                                                                    "7198732ef39d346a",
                                                                     [
-                                                                        header/* default.src */.Z.src
+                                                                        bedge_grunge.src
                                                                     ]
                                                                 ]
                                                             ])
@@ -578,9 +567,9 @@ var header = __webpack_require__(909);
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h3", {
                                                             className: style_default().dynamic([
                                                                 [
-                                                                    "b409d9060c1aed1a",
+                                                                    "7198732ef39d346a",
                                                                     [
-                                                                        header/* default.src */.Z.src
+                                                                        bedge_grunge.src
                                                                     ]
                                                                 ]
                                                             ]),
@@ -591,9 +580,9 @@ var header = __webpack_require__(909);
                                                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                                     className: style_default().dynamic([
                                                         [
-                                                            "b409d9060c1aed1a",
+                                                            "7198732ef39d346a",
                                                             [
-                                                                header/* default.src */.Z.src
+                                                                bedge_grunge.src
                                                             ]
                                                         ]
                                                     ]) + " " + ((resume_module_default()).card_item_content + " " + (resume_module_default()).card_links || ""),
@@ -603,9 +592,9 @@ var header = __webpack_require__(909);
                                                             href: "https://github.com/vaghardoost",
                                                             className: style_default().dynamic([
                                                                 [
-                                                                    "b409d9060c1aed1a",
+                                                                    "7198732ef39d346a",
                                                                     [
-                                                                        header/* default.src */.Z.src
+                                                                        bedge_grunge.src
                                                                     ]
                                                                 ]
                                                             ]),
@@ -615,9 +604,9 @@ var header = __webpack_require__(909);
                                                                 src: "https://cdn.simpleicons.org/github",
                                                                 className: style_default().dynamic([
                                                                     [
-                                                                        "b409d9060c1aed1a",
+                                                                        "7198732ef39d346a",
                                                                         [
-                                                                            header/* default.src */.Z.src
+                                                                            bedge_grunge.src
                                                                         ]
                                                                     ]
                                                                 ])
@@ -626,9 +615,9 @@ var header = __webpack_require__(909);
                                                         /*#__PURE__*/ jsx_runtime_.jsx("br", {
                                                             className: style_default().dynamic([
                                                                 [
-                                                                    "b409d9060c1aed1a",
+                                                                    "7198732ef39d346a",
                                                                     [
-                                                                        header/* default.src */.Z.src
+                                                                        bedge_grunge.src
                                                                     ]
                                                                 ]
                                                             ])
@@ -638,9 +627,9 @@ var header = __webpack_require__(909);
                                                             href: "https://t.me.vaghardoost",
                                                             className: style_default().dynamic([
                                                                 [
-                                                                    "b409d9060c1aed1a",
+                                                                    "7198732ef39d346a",
                                                                     [
-                                                                        header/* default.src */.Z.src
+                                                                        bedge_grunge.src
                                                                     ]
                                                                 ]
                                                             ]),
@@ -650,9 +639,9 @@ var header = __webpack_require__(909);
                                                                 src: "https://cdn.simpleicons.org/telegram",
                                                                 className: style_default().dynamic([
                                                                     [
-                                                                        "b409d9060c1aed1a",
+                                                                        "7198732ef39d346a",
                                                                         [
-                                                                            header/* default.src */.Z.src
+                                                                            bedge_grunge.src
                                                                         ]
                                                                     ]
                                                                 ])
@@ -661,9 +650,9 @@ var header = __webpack_require__(909);
                                                         /*#__PURE__*/ jsx_runtime_.jsx("br", {
                                                             className: style_default().dynamic([
                                                                 [
-                                                                    "b409d9060c1aed1a",
+                                                                    "7198732ef39d346a",
                                                                     [
-                                                                        header/* default.src */.Z.src
+                                                                        bedge_grunge.src
                                                                     ]
                                                                 ]
                                                             ])
@@ -673,9 +662,9 @@ var header = __webpack_require__(909);
                                                             href: "mailto:farhang.vaghardoost@gmail.com",
                                                             className: style_default().dynamic([
                                                                 [
-                                                                    "b409d9060c1aed1a",
+                                                                    "7198732ef39d346a",
                                                                     [
-                                                                        header/* default.src */.Z.src
+                                                                        bedge_grunge.src
                                                                     ]
                                                                 ]
                                                             ]),
@@ -685,9 +674,9 @@ var header = __webpack_require__(909);
                                                                 src: "https://cdn.simpleicons.org/gmail",
                                                                 className: style_default().dynamic([
                                                                     [
-                                                                        "b409d9060c1aed1a",
+                                                                        "7198732ef39d346a",
                                                                         [
-                                                                            header/* default.src */.Z.src
+                                                                            bedge_grunge.src
                                                                         ]
                                                                     ]
                                                                 ])
@@ -696,9 +685,9 @@ var header = __webpack_require__(909);
                                                         /*#__PURE__*/ jsx_runtime_.jsx("br", {
                                                             className: style_default().dynamic([
                                                                 [
-                                                                    "b409d9060c1aed1a",
+                                                                    "7198732ef39d346a",
                                                                     [
-                                                                        header/* default.src */.Z.src
+                                                                        bedge_grunge.src
                                                                     ]
                                                                 ]
                                                             ])
@@ -708,9 +697,9 @@ var header = __webpack_require__(909);
                                                             href: "#",
                                                             className: style_default().dynamic([
                                                                 [
-                                                                    "b409d9060c1aed1a",
+                                                                    "7198732ef39d346a",
                                                                     [
-                                                                        header/* default.src */.Z.src
+                                                                        bedge_grunge.src
                                                                     ]
                                                                 ]
                                                             ]),
@@ -720,9 +709,9 @@ var header = __webpack_require__(909);
                                                                 src: "https://cdn.simpleicons.org/linkedin",
                                                                 className: style_default().dynamic([
                                                                     [
-                                                                        "b409d9060c1aed1a",
+                                                                        "7198732ef39d346a",
                                                                         [
-                                                                            header/* default.src */.Z.src
+                                                                            bedge_grunge.src
                                                                         ]
                                                                     ]
                                                                 ])
@@ -740,11 +729,11 @@ var header = __webpack_require__(909);
                 })
             }),
             jsx_runtime_.jsx((style_default()), {
-                id: "b409d9060c1aed1a",
+                id: "7198732ef39d346a",
                 dynamic: [
-                    header/* default.src */.Z.src
+                    bedge_grunge.src
                 ],
-                children: `body{background:var(--dark-color)url(${header/* default.src */.Z.src});-webkit-background-size:1200px;-moz-background-size:1200px;-o-background-size:1200px;background-size:1200px}`
+                children: `body{background:var(--dark-color)url(${bedge_grunge.src})}`
             })
         ]
     });
@@ -755,6 +744,14 @@ const getStaticProps = ()=>{
     };
 };
 
+
+/***/ }),
+
+/***/ 968:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/head");
 
 /***/ }),
 
@@ -781,7 +778,7 @@ module.exports = require("styled-jsx/style");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(1239));
+var __webpack_exports__ = (__webpack_exec__(9746));
 module.exports = __webpack_exports__;
 
 })();

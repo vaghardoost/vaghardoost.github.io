@@ -16,6 +16,17 @@ module.exports = {
 
 /***/ }),
 
+/***/ 909:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/header.8d53fe0d.png","height":800,"width":1800,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAMAAACEE47CAAAABlBMVEVubm6goKDLy9yYAAAAAnRSTlMJCd6NztUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAaSURBVHicY2BgYGBgBBOMIAwiwSIgGowZGQAA7AANEkqBFQAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":4});
+
+/***/ }),
+
 /***/ 1704:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
@@ -76,7 +87,7 @@ __webpack_async_result__();
     const headerStyle = {
         backgroundPosition: "center",
         background: `url(${_styles_header_png__WEBPACK_IMPORTED_MODULE_1__/* ["default"].src */ .Z.src}) ${category.color ?? "var(--header-color)"}`,
-        backgroundSize: "600px",
+        backgroundSize: "850px",
         height: "125px",
         textAlign: "center",
         borderRadius: "15px 15px 0 0",

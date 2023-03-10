@@ -5,8 +5,9 @@
 }
 
 .category_card {
-    width: 100%;
-    margin: 75px 25px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
     display: flex;
     text-align: center;
     color: var(--light-color);

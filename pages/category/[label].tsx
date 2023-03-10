@@ -1,4 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from "next";
+import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import * as api from "../../code/api/category"
@@ -7,7 +8,6 @@ import CategoryComponent from "../../components/layout/category";
 import headerPhoto from "../../styles/header.png";
 
 import style from "./category.module.css"
-
 
 export default ({ category, children }: Props) => {
   const { isFallback } = useRouter();
@@ -24,6 +24,9 @@ export default ({ category, children }: Props) => {
     </>
   }
   return <>
+  <Head>
+    <title>دسته بندی {category.label}</title>
+  </Head>
     <div className={
       (category.parent === "" || !category.parent)
         ? style.main_topic_mode
@@ -83,7 +86,7 @@ export default ({ category, children }: Props) => {
     <style jsx>{`
       header {
         background: ${category.color ?? 'var(--header-color)'} url(${headerPhoto.src});
-        background-size: 1000px;
+        background-size: 950px
       }
     `}</style>
   </>

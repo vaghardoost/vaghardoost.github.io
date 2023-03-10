@@ -1,6 +1,7 @@
 import { GetStaticProps } from "next";
+import Head from "next/head";
 import Link from "next/link";
-import { Row, Col, Container } from "react-bootstrap"
+import { Col, Container } from "react-bootstrap"
 import * as api from "../code/api/main"
 import Category from "../code/model/category";
 import Note from "../code/model/note";
@@ -10,6 +11,9 @@ import style from "./index.module.css";
 
 const Home = ({ category, notes }: Props) => {
   return <>
+    <Head>
+      <title>فرهنگ وقردوست</title>
+    </Head>
     <Header data={category} />
     <Container>
 
@@ -48,7 +52,7 @@ const Home = ({ category, notes }: Props) => {
         {
           notes.map((note) =>
             <div className="col-md-4">
-              <Link className="link" href={`/note/${note.title.replaceAll(' ','_')}`}>
+              <Link className="link" href={`/note/${note.title.replaceAll(' ', '_')}`}>
                 <div className={style.card_note}>
                   <img src={`/images/${note.photo}`} />
                   <div className={style.card_note_content}>
@@ -56,7 +60,7 @@ const Home = ({ category, notes }: Props) => {
                     {
                       category.map((item) => {
                         if (item.id === note.category!.toString()) {
-                        return <p>{item.label}</p>
+                          return <p>{item.label}</p>
                         }
                       })
                     }

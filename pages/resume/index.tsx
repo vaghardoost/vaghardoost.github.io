@@ -5,7 +5,7 @@ import linkIcon from "../../styles/images/link.svg";
 import eduIcon from "../../styles/images/edu.svg";
 import codeIcon from "../../styles/images/code.svg";
 import brainIcon from "../../styles/images/brain.svg";
-import textuer from "../../styles/header.png";
+import textuer from "../../styles/images/bedge-grunge.png";
 
 export default ({ }: Props) => {
   return <>
@@ -108,7 +108,7 @@ export default ({ }: Props) => {
     <style jsx global>{`
       body {
         background: var(--dark-color) url(${textuer.src});
-        background-size:1200px;
+        // background-size:1200px;
       }
     `}
     </style>
