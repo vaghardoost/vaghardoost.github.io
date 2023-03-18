@@ -1,1 +1,0 @@
-self.__SSG_MANIFEST=new Set(["\u002F","\u002Fcategory","\u002Fcategory\u002F[label]","\u002Fnote\u002F[title]","\u002Fresume"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
