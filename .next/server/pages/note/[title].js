@@ -77,7 +77,7 @@ const get = async (id)=>{
     const { data: noteResponse  } = await axios__WEBPACK_IMPORTED_MODULE_0__["default"].get(`http://localhost:31374/note/${id}`);
     if (noteResponse.success) {
         const note = noteResponse.payload;
-        const { data: catResponse  } = await axios__WEBPACK_IMPORTED_MODULE_0__["default"].get(`http://localhost:31374/category/${note.category}`);
+        const { data: catResponse  } = await axios__WEBPACK_IMPORTED_MODULE_0__["default"].get(`http://localhost:31374/note/category/${note.category}`);
         if (catResponse.success) {
             note.category = catResponse.payload;
         }

@@ -5,7 +5,7 @@ import Note from "../model/note";
 
 
 export const getCategories = async () => {
-    const { data } = await axios.get<ApiResult<Category[]>>("http://localhost:31374/category");
+    const { data } = await axios.get<ApiResult<Category[]>>("http://localhost:31374/note/category");
     return data.payload;
 }
 
