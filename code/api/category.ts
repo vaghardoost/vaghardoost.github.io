@@ -1,9 +1,10 @@
 import axios from "axios"
 import ApiResult from "../model/api";
 import Category from "../model/category";
+import { namespace } from "./_namespace";
 
 export const list = async () => {
-  const { data } = await axios.get<ApiResult<Category[]>>('http://localhost:31374/note/category')
+  const { data } = await axios.get<ApiResult<Category[]>>(`http://localhost:31376/category/${namespace}`);
   return data;
 }
 
@@ -19,6 +20,6 @@ export const rootlist = async () => {
 }
 
 export const get = async (id: string) => {
-  const { data } = await axios.get<ApiResult<Category>>(`http://localhost:31374/note/category/${id}`);
+  const { data } = await axios.get<ApiResult<Category>>(`http://localhost:31376/category/${namespace}/${id}`);
   return data;
 }

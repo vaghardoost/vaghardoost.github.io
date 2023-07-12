@@ -82,11 +82,11 @@ interface Props {
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
   const category = await api.getCategories();
-  const notes = await api.getPinNotes();
+  // const notes = await api.getPinNotes();
   return {
     props: {
       category: category,
-      notes: notes
+      notes: []
     },
     revalidate: 1
   }

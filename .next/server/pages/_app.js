@@ -23,7 +23,13 @@ const App = ({ Component , pageProps  })=>{
         ...pageProps
     });
 };
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App); /**
+  final _getDatapack = "the inquiry url";
+  final _getNamespace = "the inquiry url";
+  final _getPublicNamespace = "the inquiry url";
+  final _getExplorerNamespace = "the inquiry url";
+  final _getHelpNamespace = "the inquiry url";
+ */ 
 
 
 /***/ }),

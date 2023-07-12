@@ -38,11 +38,13 @@ __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __we
 /* harmony export */   "pb": () => (/* binding */ list)
 /* harmony export */ });
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9648);
+/* harmony import */ var _namespace__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1112);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([axios__WEBPACK_IMPORTED_MODULE_0__]);
 axios__WEBPACK_IMPORTED_MODULE_0__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
 
+
 const list = async ()=>{
-    const { data  } = await axios__WEBPACK_IMPORTED_MODULE_0__["default"].get("http://localhost:31374/note/category");
+    const { data  } = await axios__WEBPACK_IMPORTED_MODULE_0__["default"].get(`http://localhost:31376/category/${_namespace__WEBPACK_IMPORTED_MODULE_1__/* .namespace */ .u}`);
     return data;
 };
 const rootlist = async ()=>{
@@ -56,7 +58,7 @@ const rootlist = async ()=>{
     return result;
 };
 const get = async (id)=>{
-    const { data  } = await axios__WEBPACK_IMPORTED_MODULE_0__["default"].get(`http://localhost:31374/note/category/${id}`);
+    const { data  } = await axios__WEBPACK_IMPORTED_MODULE_0__["default"].get(`http://localhost:31376/category/${_namespace__WEBPACK_IMPORTED_MODULE_1__/* .namespace */ .u}/${id}`);
     return data;
 };
 

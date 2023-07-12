@@ -52,29 +52,31 @@ module.exports = {
 "use strict";
 __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "C": () => (/* binding */ getCategories),
-/* harmony export */   "s": () => (/* binding */ getPinNotes)
+/* harmony export */   "C": () => (/* binding */ getCategories)
 /* harmony export */ });
+/* unused harmony export getPinNotes */
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9648);
+/* harmony import */ var _namespace__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1112);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([axios__WEBPACK_IMPORTED_MODULE_0__]);
 axios__WEBPACK_IMPORTED_MODULE_0__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
 
+
 const getCategories = async ()=>{
-    const { data  } = await axios__WEBPACK_IMPORTED_MODULE_0__["default"].get("http://localhost:31374/note/category");
+    const { data  } = await axios__WEBPACK_IMPORTED_MODULE_0__["default"].get(`http://localhost:31376/category/${_namespace__WEBPACK_IMPORTED_MODULE_1__/* .namespace */ .u}`);
     return data.payload;
 };
 const getPinNotes = async ()=>{
-    const list = [
-        "24ae5013e83ef5dd",
-        "78ba8400bfd21fa6",
-        "cb19c000d579cb4e"
-    ];
-    const result = [];
-    for (const id of list){
-        const { data  } = await axios__WEBPACK_IMPORTED_MODULE_0__["default"].get(`http://localhost:31374/note/${id}`);
-        result.push(data.payload);
-    }
-    return result;
+    // const list = [
+    //     '24ae5013e83ef5dd',
+    //     '78ba8400bfd21fa6',
+    //     'cb19c000d579cb4e'
+    // ];
+    // const result: Note[] = [];
+    // for (const id of list) {
+    //     const { data } = await axios.get<ApiResult<Note>>(`http://localhost:31376/note/${id}`);
+    //     result.push(data.payload);
+    // }
+    return [];
 };
 
 __webpack_async_result__();
@@ -334,11 +336,11 @@ const Home = ({ category , notes  })=>{
 };
 const getStaticProps = async ()=>{
     const category = await _code_api_main__WEBPACK_IMPORTED_MODULE_4__/* .getCategories */ .C();
-    const notes = await _code_api_main__WEBPACK_IMPORTED_MODULE_4__/* .getPinNotes */ .s();
+    // const notes = await api.getPinNotes();
     return {
         props: {
             category: category,
-            notes: notes
+            notes: []
         },
         revalidate: 1
     };
@@ -597,7 +599,7 @@ module.exports = import("axios");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [210,676,664], () => (__webpack_exec__(4186)));
+var __webpack_exports__ = __webpack_require__.X(0, [210,676,664,112], () => (__webpack_exec__(4186)));
 module.exports = __webpack_exports__;
 
 })();
