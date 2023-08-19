@@ -139,10 +139,10 @@ ul.info > li > :last-child {
         height: 125px;
         border-radius: 25px;
     }
+    ul.info_footer,
     ul.info {
         margin-top: 20px;
-        background-color: #f7f7f7;
-        border-radius: 10px;
+        /* background-color: #f7f7f7; */
         padding: 10px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
