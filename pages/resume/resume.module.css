@@ -142,7 +142,6 @@ ul.info > li > :last-child {
     ul.info_footer,
     ul.info {
         margin-top: 20px;
-        /* background-color: #f7f7f7; */
         padding: 10px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
