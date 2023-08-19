@@ -10,20 +10,25 @@ exports.modules = {
 // Exports
 module.exports = {
 	"card": "resume_card__j223d",
-	"card_img": "resume_card_img__cNi40",
 	"card_header": "resume_card_header__tqN4F",
-	"card_content": "resume_card_content__m_HP6",
-	"card_bar": "resume_card_bar__APb7f",
-	"card_item": "resume_card_item__HIj7n",
-	"card_item_icon": "resume_card_item_icon__25u6b",
-	"card_item_content": "resume_card_item_content__S_prB",
-	"card_links": "resume_card_links__I0Mxf"
+	"card_body": "resume_card_body__AwehE",
+	"cader_label": "resume_cader_label___OG2K",
+	"cader": "resume_cader__cJiEJ",
+	"link": "resume_link__hE14w",
+	"skills": "resume_skills__ctbC6",
+	"info_footer": "resume_info_footer__vAuSD",
+	"info": "resume_info__nG7ii",
+	"card_footer": "resume_card_footer__WEsAt",
+	"timeline": "resume_timeline__VIjAF",
+	"timeline_panel": "resume_timeline_panel__Ki2P6",
+	"timeline_badge": "resume_timeline_badge__NPGcr",
+	"timeline_inverted": "resume_timeline_inverted__o0smM"
 };
 
 
 /***/ }),
 
-/***/ 9746:
+/***/ 831:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -38,24 +43,38 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: external "react/jsx-runtime"
 var jsx_runtime_ = __webpack_require__(997);
-// EXTERNAL MODULE: external "styled-jsx/style"
-var style_ = __webpack_require__(9816);
-var style_default = /*#__PURE__*/__webpack_require__.n(style_);
 // EXTERNAL MODULE: external "next/head"
 var head_ = __webpack_require__(968);
 var head_default = /*#__PURE__*/__webpack_require__.n(head_);
 // EXTERNAL MODULE: ./pages/resume/resume.module.css
 var resume_module = __webpack_require__(5536);
 var resume_module_default = /*#__PURE__*/__webpack_require__.n(resume_module);
-;// CONCATENATED MODULE: ./styles/images/link.svg
-/* harmony default export */ const images_link = ({"src":"/_next/static/media/link.59f2c384.svg","height":48,"width":48});
+;// CONCATENATED MODULE: ./styles/images/ic_react.png
+/* harmony default export */ const ic_react = ({"src":"/_next/static/media/ic_react.6298440a.png","height":512,"width":512,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAHlBMVEUA1/8A1/8A1/8A1/8A1/8A1/8A1/8A1/8A1/8A1/+yM8hxAAAACnRSTlNIAYZoORModl1qVwZG+wAAAAlwSFlzAAALEwAACxMBAJqcGAAAAC9JREFUeJxFi0kOADAIhBiXqv//cC+mvZEASGQioTjuJ4R6qqYFmJkBxMJTP979AhzwAM2z9hy1AAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":8});
+;// CONCATENATED MODULE: ./styles/images/ic_flutter.png
+/* harmony default export */ const ic_flutter = ({"src":"/_next/static/media/ic_flutter.4fe797d3.png","height":600,"width":600,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAJ1BMVEU6luhCpPVBpfZAovILQplCpPRBpfVBo/JBpPVCpfQMR6FDpvUmabP+/eI+AAAACnRSTlMBiOUeq5ZFWrW0CPwACwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAC9JREFUeJxlyLkRACAMxED5bH76r5cxhESrEQAmSz6LzGvNMO9quVzrCmPHC2IGBw0/AIATOGajAAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":8});
+;// CONCATENATED MODULE: ./styles/images/ic_js.png
+/* harmony default export */ const ic_js = ({"src":"/_next/static/media/ic_js.81550873.png","height":512,"width":512,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAG1BMVEVSnUJSnUJSnUJSnUJSnUJMaXFSnUJSnUJSnUIsr/IbAAAACXRSTlM3RHpoWAAQkShx9swkAAAACXBIWXMAAAsTAAALEwEAmpwYAAAANElEQVR4nEXLsQ0AMQzDQNqS7Ow/8eORIh2LI8lIk5BqTleg5xQNBbvyDa0A2eXm4ST+9w8c+gDNBHmNdwAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
+;// CONCATENATED MODULE: ./styles/images/telegram.png
+/* harmony default export */ const telegram = ({"src":"/_next/static/media/telegram.781698b1.png","height":48,"width":48,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAP1BMVEVwnNDK2eurx+iUrsnT1dZMaXFWhbR7ptp4pNp1otjl7PRgj8Kdssddi7tXhrZZiLd4o9mGq9hkjba+xs5ZirxMgIlmAAAAEHRSTlMr+/7+/gD+9LP3/vb4uPW6NJJ6TQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAD5JREFUeJwdy0kSgCAQBMEGZnWjR/3/Ww08VxYU4R5QwEnSgWBWbxXIapvIvcPZRR6zlcY4bP74tQtYe57QD0qbAhWitzo1AAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":8});
+;// CONCATENATED MODULE: ./styles/images/instagram.png
+/* harmony default export */ const instagram = ({"src":"/_next/static/media/instagram.e6ceca95.png","height":48,"width":48,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAVFBMVEVMaXH+uTr/qj//z2D8RoH/Xm3/hVb1VH/2NpL9S3z/zFb7MJPVNK3lM6H+WXP+xUr/ujv/2XP4PonjNKL/SH3+flr/dl/+mEr/aWb+ZGr+uTX/1m9KuWdXAAAAHHRSTlMAF62ztKWkE6+eESuWrSatsZ9qnwhlM6BDZz9nJpp9uAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAEBJREFUeJwFwYUBgDAQALGrft1w2H9PEsRZG2oRrgMhb4XB6eLKlZ58a3EPmKSVOAkYXu1vLPNDKZ5ImqYP7eUHV2YCYLBoOOEAAAAASUVORK5CYII=","blurWidth":8,"blurHeight":8});
+;// CONCATENATED MODULE: ./styles/images/call.png
+/* harmony default export */ const call = ({"src":"/_next/static/media/call.3b7a52b2.png","height":48,"width":48,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAOVBMVEUn0y+48bv///8d0CZB2EhZ3V8q0zIq0zJMaXEr0zLL9M0b0COZ6p2N55Fm32st1DUh0SpQ21d243uKwFnrAAAAD3RSTlP0+P60/Pu0KgCz/vb+/v6ZqR9NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPklEQVR4nB3KWxKAIAwEweHlJqAmcP/DWmV/N6YLLhkiIxLRdhn3SGed2t8ngJin7wDPPmtJ//PZCJOzmuwDStICH9nOIPsAAAAASUVORK5CYII=","blurWidth":8,"blurHeight":8});
+;// CONCATENATED MODULE: ./styles/images/linkedin.png
+/* harmony default export */ const linkedin = ({"src":"/_next/static/media/linkedin.d4b8635b.png","height":32,"width":32,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAALVBMVEUAfbsZisEAfboCfrsAermp1Ojt9vpAn8zC4O9lsdbU6fN8vdxvtthMpc+PxuFXvvYeAAAABHRSTlPQ/uX+U5FZawAAAAlwSFlzAAALEwAACxMBAJqcGAAAADdJREFUeJwdi1sKADEMhKY4afrc+x93Sf0SQckUkmMagzhpGlSJ1T/La499Ok9ulsSMmwPp3egHLhYBWyagR9sAAAAASUVORK5CYII=","blurWidth":8,"blurHeight":8});
 ;// CONCATENATED MODULE: ./styles/images/edu.svg
 /* harmony default export */ const edu = ({"src":"/_next/static/media/edu.a4f396d6.svg","height":48,"width":48});
-;// CONCATENATED MODULE: ./styles/images/brain.svg
-/* harmony default export */ const brain = ({"src":"/_next/static/media/brain.9f4e9c34.svg","height":48,"width":48});
-;// CONCATENATED MODULE: ./styles/images/bedge-grunge.png
-/* harmony default export */ const bedge_grunge = ({"src":"/_next/static/media/bedge-grunge.f28e5125.png","height":375,"width":588,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAMAAABPT11nAAAABlBMVEXCu6/CvK8XaivFAAAAAnRSTlNUU1omVSYAAAAJcEhZcwAACxMAAAsTAQCanBgAAAASSURBVHicY2CAAUY4CzsfKAoAAGMAAxW+3CQAAAAASUVORK5CYII=","blurWidth":8,"blurHeight":5});
+;// CONCATENATED MODULE: ./styles/images/fa.v.jpg
+/* harmony default export */ const fa_v = ({"src":"/_next/static/media/fa.v.3db17046.jpg","height":640,"width":640,"blurDataURL":"data:image/jpeg;base64,/9j/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAAIAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAdEAACAgIDAQAAAAAAAAAAAAABAwARAgQGEiEU/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCy4uha1bO8Gln2ZjLsEhY8ugRj5YuriIkif//Z","blurWidth":8,"blurHeight":8});
+;// CONCATENATED MODULE: ./styles/18240979_v748-toon-103.jpg
+/* harmony default export */ const _18240979_v748_toon_103 = ({"src":"/_next/static/media/18240979_v748-toon-103.76340134.jpg","height":2813,"width":5001,"blurDataURL":"data:image/jpeg;base64,/9j/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAAEAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAf/xAAZEAACAwEAAAAAAAAAAAAAAAAAAQIDElH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8Aq03iptcAAH//2Q==","blurWidth":8,"blurHeight":4});
 ;// CONCATENATED MODULE: ./pages/resume/index.tsx
+
+
+
+
+
 
 
 
@@ -69,671 +88,512 @@ var resume_module_default = /*#__PURE__*/__webpack_require__.n(resume_module);
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx((head_default()), {
                 children: /*#__PURE__*/ jsx_runtime_.jsx("title", {
-                    className: style_default().dynamic([
-                        [
-                            "7198732ef39d346a",
-                            [
-                                bedge_grunge.src
-                            ]
-                        ]
-                    ]),
-                    children: "روزمه من"
+                    children: "فرهنگ وقردوست"
                 })
             }),
-            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: style_default().dynamic([
-                    [
-                        "7198732ef39d346a",
-                        [
-                            bedge_grunge.src
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                className: (resume_module_default()).card,
+                children: [
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: (resume_module_default()).card_header,
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx("h1", {
+                                children: "فرهنگ وقردوست"
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                children: "برنامه نویس و توسعه دهنده نرم افزار"
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                src: fa_v.src
+                            })
                         ]
-                    ]
-                ]) + " " + "container",
-                children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                    className: style_default().dynamic([
-                        [
-                            "7198732ef39d346a",
-                            [
-                                bedge_grunge.src
-                            ]
-                        ]
-                    ]) + " " + "row",
-                    children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: style_default().dynamic([
-                            [
-                                "7198732ef39d346a",
-                                [
-                                    bedge_grunge.src
-                                ]
-                            ]
-                        ]) + " " + "col-md-12",
-                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                            className: style_default().dynamic([
-                                [
-                                    "7198732ef39d346a",
-                                    [
-                                        bedge_grunge.src
-                                    ]
-                                ]
-                            ]) + " " + ((resume_module_default()).card || ""),
-                            children: [
-                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                    className: style_default().dynamic([
-                                        [
-                                            "7198732ef39d346a",
-                                            [
-                                                bedge_grunge.src
-                                            ]
-                                        ]
-                                    ]) + " " + ((resume_module_default()).card_bar || ""),
-                                    children: [
-                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
-                                            className: style_default().dynamic([
-                                                [
-                                                    "7198732ef39d346a",
-                                                    [
-                                                        bedge_grunge.src
-                                                    ]
-                                                ]
-                                            ]),
-                                            children: [
-                                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                    className: style_default().dynamic([
-                                                        [
-                                                            "7198732ef39d346a",
-                                                            [
-                                                                bedge_grunge.src
-                                                            ]
-                                                        ]
-                                                    ]),
-                                                    children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                        href: "#",
-                                                        className: style_default().dynamic([
-                                                            [
-                                                                "7198732ef39d346a",
-                                                                [
-                                                                    bedge_grunge.src
-                                                                ]
-                                                            ]
-                                                        ]) + " " + "link",
-                                                        children: "تحصیلات"
-                                                    })
-                                                }),
-                                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                    className: style_default().dynamic([
-                                                        [
-                                                            "7198732ef39d346a",
-                                                            [
-                                                                bedge_grunge.src
-                                                            ]
-                                                        ]
-                                                    ]),
-                                                    children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                        href: "#",
-                                                        className: style_default().dynamic([
-                                                            [
-                                                                "7198732ef39d346a",
-                                                                [
-                                                                    bedge_grunge.src
-                                                                ]
-                                                            ]
-                                                        ]) + " " + "link",
-                                                        children: "مهارت"
-                                                    })
-                                                }),
-                                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                    className: style_default().dynamic([
-                                                        [
-                                                            "7198732ef39d346a",
-                                                            [
-                                                                bedge_grunge.src
-                                                            ]
-                                                        ]
-                                                    ]),
-                                                    children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                        href: "#",
-                                                        className: style_default().dynamic([
-                                                            [
-                                                                "7198732ef39d346a",
-                                                                [
-                                                                    bedge_grunge.src
-                                                                ]
-                                                            ]
-                                                        ]) + " " + "link",
-                                                        children: "نمونه کار"
-                                                    })
-                                                }),
-                                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                    className: style_default().dynamic([
-                                                        [
-                                                            "7198732ef39d346a",
-                                                            [
-                                                                bedge_grunge.src
-                                                            ]
-                                                        ]
-                                                    ]),
-                                                    children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                        href: "#",
-                                                        className: style_default().dynamic([
-                                                            [
-                                                                "7198732ef39d346a",
-                                                                [
-                                                                    bedge_grunge.src
-                                                                ]
-                                                            ]
-                                                        ]) + " " + "link",
-                                                        children: "لینک"
-                                                    })
-                                                })
-                                            ]
-                                        }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx("ul", {
-                                            className: style_default().dynamic([
-                                                [
-                                                    "7198732ef39d346a",
-                                                    [
-                                                        bedge_grunge.src
-                                                    ]
-                                                ]
-                                            ]),
-                                            children: /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                className: style_default().dynamic([
-                                                    [
-                                                        "7198732ef39d346a",
-                                                        [
-                                                            bedge_grunge.src
-                                                        ]
-                                                    ]
-                                                ]),
-                                                children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                    href: "#",
-                                                    className: style_default().dynamic([
-                                                        [
-                                                            "7198732ef39d346a",
-                                                            [
-                                                                bedge_grunge.src
-                                                            ]
-                                                        ]
-                                                    ]) + " " + "link",
-                                                    children: "بلاگ"
-                                                })
-                                            })
-                                        })
-                                    ]
-                                }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                    className: style_default().dynamic([
-                                        [
-                                            "7198732ef39d346a",
-                                            [
-                                                bedge_grunge.src
-                                            ]
-                                        ]
-                                    ]) + " " + ((resume_module_default()).card_header || ""),
-                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                        className: style_default().dynamic([
-                                            [
-                                                "7198732ef39d346a",
-                                                [
-                                                    bedge_grunge.src
-                                                ]
-                                            ]
-                                        ]) + " " + "row",
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: (resume_module_default()).card_body,
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                                children: "فرهنگ وقردست"
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
+                                className: (resume_module_default()).info,
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
                                         children: [
-                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                className: style_default().dynamic([
-                                                    [
-                                                        "7198732ef39d346a",
-                                                        [
-                                                            bedge_grunge.src
-                                                        ]
-                                                    ]
-                                                ]) + " " + "col-md-4",
-                                                children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                                    src: "/images/4b70fb29d7da578ce7310d2765a8c56f.jpeg",
-                                                    alt: "",
-                                                    className: style_default().dynamic([
-                                                        [
-                                                            "7198732ef39d346a",
-                                                            [
-                                                                bedge_grunge.src
-                                                            ]
-                                                        ]
-                                                    ]) + " " + ((resume_module_default()).card_img || "")
-                                                })
+                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                children: "تاریخ تولد"
                                             }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                className: style_default().dynamic([
-                                                    [
-                                                        "7198732ef39d346a",
-                                                        [
-                                                            bedge_grunge.src
-                                                        ]
-                                                    ]
-                                                ]) + " " + "col-md-8",
-                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                                    className: style_default().dynamic([
-                                                        [
-                                                            "7198732ef39d346a",
-                                                            [
-                                                                bedge_grunge.src
-                                                            ]
-                                                        ]
-                                                    ]) + " " + ((resume_module_default()).card_content || ""),
-                                                    children: [
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("h6", {
-                                                            className: style_default().dynamic([
-                                                                [
-                                                                    "7198732ef39d346a",
-                                                                    [
-                                                                        bedge_grunge.src
-                                                                    ]
-                                                                ]
-                                                            ]),
-                                                            children: "برنامه نویس و توسعه دهنده نرم افزار"
-                                                        }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("h1", {
-                                                            className: style_default().dynamic([
-                                                                [
-                                                                    "7198732ef39d346a",
-                                                                    [
-                                                                        bedge_grunge.src
-                                                                    ]
-                                                                ]
-                                                            ]),
-                                                            children: "فرهنگ وقردوست"
-                                                        })
-                                                    ]
-                                                })
+                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                children: "۱۳۷۴/۰۴/۱۹"
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                children: "محل سکونت"
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                children: "تهران - جنت آباد"
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                children: "مدرک تحصیلی "
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                children: "کارشناسی نرم افزار"
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                children: "وضعیت وظیفه عمومی"
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                children: "پایان خدمت"
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                                src: call.src
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                children: "۰۹۳۸۸۳۸۹۹۸۸"
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                                src: linkedin.src
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                className: (resume_module_default()).link,
+                                                dir: "ltr",
+                                                target: "_blank",
+                                                href: "https://linkedin.com/in/vaghardoost",
+                                                children: "vaghardoost"
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                                src: telegram.src
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                className: (resume_module_default()).link,
+                                                dir: "ltr",
+                                                target: "_blank",
+                                                href: "https://t.me/vaghardoost",
+                                                children: "@vaghardoost"
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                                src: instagram.src
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                className: (resume_module_default()).link,
+                                                dir: "ltr",
+                                                target: "_blank",
+                                                href: "https://instagram.com/fa.v_74",
+                                                children: "@fa.v_74"
                                             })
                                         ]
                                     })
-                                }),
-                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                    className: style_default().dynamic([
-                                        [
-                                            "7198732ef39d346a",
-                                            [
-                                                bedge_grunge.src
-                                            ]
+                                ]
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                                children: "مهارت ها"
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
+                                className: (resume_module_default()).timeline,
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: (resume_module_default()).timeline_badge,
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                                    src: ic_flutter.src
+                                                })
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                className: (resume_module_default()).timeline_panel,
+                                                children: [
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("h3", {
+                                                        children: "flutter"
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("h6", {
+                                                        children: "از تابستان ۱۴۰۰"
+                                                    }),
+                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
+                                                        className: (resume_module_default()).skills,
+                                                        children: [
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "Dio"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "Getx"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "Sqflite"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "BloC"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "Provider"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "Riverpod"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "ObjectBox"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "Clean-Architecture"
+                                                            })
+                                                        ]
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("h5", {
+                                                        className: (resume_module_default()).cader_label,
+                                                        children: "نمونه ها"
+                                                    }),
+                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
+                                                        className: (resume_module_default()).cader,
+                                                        children: [
+                                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                                                children: [
+                                                                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                                        className: (resume_module_default()).link,
+                                                                        href: "#",
+                                                                        children: "دستیار زبان کلمه"
+                                                                    }),
+                                                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                                        children: " تابستان ۱۴۰۰ در کافه بازار منتشر شد این اپ با مدیریت وضعیت Get.X کار میکند و از پایگاه داده محلی (sqflite) بهره میبرد"
+                                                                    })
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                                                children: [
+                                                                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                                        className: (resume_module_default()).link,
+                                                                        href: "#",
+                                                                        children: "مدیریت زمان"
+                                                                    }),
+                                                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                                        children: "اپلیکیشن با ابزار های مختلف برای محاسبات زمان و تاریخ که امکانات مختلفی را دارد انتشار در تابستان ۱۴۰۱ کافه بازار"
+                                                                    })
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                                                children: [
+                                                                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                                        className: (resume_module_default()).link,
+                                                                        href: "#",
+                                                                        children: "مجله سرگرمی قاصدک"
+                                                                    }),
+                                                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                                        children: "اصل کار این اپ یک ساختار اجتماعی هست که فعلا به دلیل صرفه جویی در هزینه برای گرفتن سرور امکان تولید محتوا برای کاربرانش مهیا نیست ولی محیطی که امکان داشتن چند صفحه برای یک فضا مهیا میکند."
+                                                                    }),
+                                                                    /*#__PURE__*/ jsx_runtime_.jsx("i", {
+                                                                        children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                                            children: "این اپ هنوز در مرحله انتشار نرسیده و کار روی آن در حال حاضر ادامه دارد."
+                                                                        })
+                                                                    })
+                                                                ]
+                                                            })
+                                                        ]
+                                                    })
+                                                ]
+                                            })
                                         ]
-                                    ]),
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: (resume_module_default()).timeline_badge,
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                                    src: ic_js.src
+                                                })
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                className: (resume_module_default()).timeline_panel,
+                                                children: [
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("h4", {
+                                                        children: "node.js"
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("h6", {
+                                                        children: "از زمستان ۱۳۹۷"
+                                                    }),
+                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
+                                                        className: (resume_module_default()).skills,
+                                                        children: [
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "nestjs"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "express"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "kafka"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "mongoose"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "redis"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "docker"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "JWT"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "microservice-architectuer"
+                                                            })
+                                                        ]
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("h5", {
+                                                        className: (resume_module_default()).cader_label,
+                                                        children: "نمونه ها"
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("ul", {
+                                                        className: (resume_module_default()).cader,
+                                                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                                            children: [
+                                                                /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                                    href: "#",
+                                                                    className: (resume_module_default()).link,
+                                                                    children: "سیستم مدیریت محتوا"
+                                                                }),
+                                                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                                    children: "یک سیستم مدیریت محتوا در سمت backend با فریم ورک nestjs طراحی و توسعه داده میشود و از معماری میکروسرویس بهره میبرد که به صورت open source و رایگان در گیتهاب موجود است"
+                                                                })
+                                                            ]
+                                                        })
+                                                    })
+                                                ]
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: (resume_module_default()).timeline_badge,
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                                    src: ic_react.src
+                                                })
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                className: (resume_module_default()).timeline_panel,
+                                                children: [
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("h4", {
+                                                        children: "React js"
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("h6", {
+                                                        children: "از بهار ۱۳۹۹"
+                                                    }),
+                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
+                                                        className: (resume_module_default()).skills,
+                                                        children: [
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "redux"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "axios"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "next.js"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "ant design"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "react-router"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "react-bootstrap"
+                                                            })
+                                                        ]
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("h5", {
+                                                        className: (resume_module_default()).cader_label,
+                                                        children: "نمونه ها"
+                                                    }),
+                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
+                                                        className: (resume_module_default()).cader,
+                                                        children: [
+                                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                                                children: [
+                                                                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                                        className: (resume_module_default()).link,
+                                                                        href: "#",
+                                                                        children: "پنل گرافیکی سیستم مدیریت محتوا"
+                                                                    }),
+                                                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                                        children: "پنل مدیریت محتوا برای سیستم backend سیستم مدیریت محتوا با استفاده از redux و ant design توسعه داده شده است."
+                                                                    })
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                                                children: [
+                                                                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                                        className: (resume_module_default()).link,
+                                                                        href: "#",
+                                                                        children: "وبلاگ شخصی"
+                                                                    }),
+                                                                    " (همین این\uD83D\uDE05)",
+                                                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                                        children: "یک وبسایت نمایش پست ها دسته بندی که با استفاده از فریمورک nextjs توسعه داده شده که backend که همون سیستم مدیریت محتواست رو مرور میکنه و فایل های html و css و js به صورت static ایجاد میکنه."
+                                                                    })
+                                                                ]
+                                                            })
+                                                        ]
+                                                    })
+                                                ]
+                                            })
+                                        ]
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                                children: "تحصیلات"
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
+                                className: (resume_module_default()).timeline,
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: (resume_module_default()).timeline_badge,
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                                    src: edu.src
+                                                })
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                className: (resume_module_default()).timeline_panel,
+                                                children: [
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("h4", {
+                                                        children: "کاردانی (۱۳۹۳ - ۱۳۹۵)"
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("h6", {
+                                                        children: "آموزشکده فنی شهید چمران رشت"
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                        children: "مهندسی کامپیوتر - شاخه مهندسی نرم افزار"
+                                                    })
+                                                ]
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: (resume_module_default()).timeline_badge,
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                                    src: edu.src
+                                                })
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                className: (resume_module_default()).timeline_panel,
+                                                children: [
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("h4", {
+                                                        children: "کاردانی (۱۳۹۵ - ۱۳۹۷)"
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("h6", {
+                                                        children: "دانشکده فنی شهید باهنر رشت"
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                        children: "مهندسی کامپیوتر - شاخه مهندسی تکنولوژی نرم افزار"
+                                                    })
+                                                ]
+                                            })
+                                        ]
+                                    })
+                                ]
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: (resume_module_default()).card_footer,
+                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
+                            className: (resume_module_default()).info_footer,
+                            children: [
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
                                     children: [
-                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                            className: style_default().dynamic([
-                                                [
-                                                    "7198732ef39d346a",
-                                                    [
-                                                        bedge_grunge.src
-                                                    ]
-                                                ]
-                                            ]) + " " + ((resume_module_default()).card_item || ""),
-                                            children: [
-                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                                    className: style_default().dynamic([
-                                                        [
-                                                            "7198732ef39d346a",
-                                                            [
-                                                                bedge_grunge.src
-                                                            ]
-                                                        ]
-                                                    ]) + " " + ((resume_module_default()).card_item_icon || ""),
-                                                    children: [
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                                            src: edu.src,
-                                                            alt: "",
-                                                            className: style_default().dynamic([
-                                                                [
-                                                                    "7198732ef39d346a",
-                                                                    [
-                                                                        bedge_grunge.src
-                                                                    ]
-                                                                ]
-                                                            ])
-                                                        }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("h3", {
-                                                            className: style_default().dynamic([
-                                                                [
-                                                                    "7198732ef39d346a",
-                                                                    [
-                                                                        bedge_grunge.src
-                                                                    ]
-                                                                ]
-                                                            ]),
-                                                            children: "تحصیلات"
-                                                        })
-                                                    ]
-                                                }),
-                                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                    className: style_default().dynamic([
-                                                        [
-                                                            "7198732ef39d346a",
-                                                            [
-                                                                bedge_grunge.src
-                                                            ]
-                                                        ]
-                                                    ]) + " " + ((resume_module_default()).card_item_content || ""),
-                                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
-                                                        className: style_default().dynamic([
-                                                            [
-                                                                "7198732ef39d346a",
-                                                                [
-                                                                    bedge_grunge.src
-                                                                ]
-                                                            ]
-                                                        ]),
-                                                        children: [
-                                                            "از 1393 تا 1395 آموزشکده فنی پسران رشت (شهید چمران)",
-                                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {
-                                                                className: style_default().dynamic([
-                                                                    [
-                                                                        "7198732ef39d346a",
-                                                                        [
-                                                                            bedge_grunge.src
-                                                                        ]
-                                                                    ]
-                                                                ])
-                                                            }),
-                                                            "از 1395 تا 1397 دانشکده فنی پسران شیراز (شهید باهنر)"
-                                                        ]
-                                                    })
-                                                })
-                                            ]
+                                        /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                            src: call.src
                                         }),
-                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                            className: style_default().dynamic([
-                                                [
-                                                    "7198732ef39d346a",
-                                                    [
-                                                        bedge_grunge.src
-                                                    ]
-                                                ]
-                                            ]) + " " + ((resume_module_default()).card_item || ""),
-                                            children: [
-                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                                    className: style_default().dynamic([
-                                                        [
-                                                            "7198732ef39d346a",
-                                                            [
-                                                                bedge_grunge.src
-                                                            ]
-                                                        ]
-                                                    ]) + " " + ((resume_module_default()).card_item_icon || ""),
-                                                    children: [
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                                            src: brain.src,
-                                                            alt: "",
-                                                            className: style_default().dynamic([
-                                                                [
-                                                                    "7198732ef39d346a",
-                                                                    [
-                                                                        bedge_grunge.src
-                                                                    ]
-                                                                ]
-                                                            ])
-                                                        }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("h3", {
-                                                            className: style_default().dynamic([
-                                                                [
-                                                                    "7198732ef39d346a",
-                                                                    [
-                                                                        bedge_grunge.src
-                                                                    ]
-                                                                ]
-                                                            ]),
-                                                            children: "مهارت"
-                                                        })
-                                                    ]
-                                                }),
-                                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                    className: style_default().dynamic([
-                                                        [
-                                                            "7198732ef39d346a",
-                                                            [
-                                                                bedge_grunge.src
-                                                            ]
-                                                        ]
-                                                    ]) + " " + ((resume_module_default()).card_item_content || ""),
-                                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
-                                                        className: style_default().dynamic([
-                                                            [
-                                                                "7198732ef39d346a",
-                                                                [
-                                                                    bedge_grunge.src
-                                                                ]
-                                                            ]
-                                                        ]),
-                                                        children: [
-                                                            "برنامه نویسی سمت backend با node.js (فریمورک های nest js و express js)",
-                                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {
-                                                                className: style_default().dynamic([
-                                                                    [
-                                                                        "7198732ef39d346a",
-                                                                        [
-                                                                            bedge_grunge.src
-                                                                        ]
-                                                                    ]
-                                                                ])
-                                                            }),
-                                                            "طراحی وب (HTML و CSS) و برنامه نویسی سمت frontend با node.js (فریمورک nextjs  و کتابخانه react.js)",
-                                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {
-                                                                className: style_default().dynamic([
-                                                                    [
-                                                                        "7198732ef39d346a",
-                                                                        [
-                                                                            bedge_grunge.src
-                                                                        ]
-                                                                    ]
-                                                                ])
-                                                            }),
-                                                            "طراحی اپلیکیشن با فریمورک Flutter برای دستگاه های android و desktop"
-                                                        ]
-                                                    })
-                                                })
-                                            ]
+                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                            children: "۰۹۳۸۸۳۸۹۹۸۸"
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                            src: linkedin.src
                                         }),
-                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                            className: style_default().dynamic([
-                                                [
-                                                    "7198732ef39d346a",
-                                                    [
-                                                        bedge_grunge.src
-                                                    ]
-                                                ]
-                                            ]) + " " + ((resume_module_default()).card_item || ""),
-                                            children: [
-                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                                    className: style_default().dynamic([
-                                                        [
-                                                            "7198732ef39d346a",
-                                                            [
-                                                                bedge_grunge.src
-                                                            ]
-                                                        ]
-                                                    ]) + " " + ((resume_module_default()).card_item_icon || ""),
-                                                    children: [
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                                            src: images_link.src,
-                                                            alt: "",
-                                                            className: style_default().dynamic([
-                                                                [
-                                                                    "7198732ef39d346a",
-                                                                    [
-                                                                        bedge_grunge.src
-                                                                    ]
-                                                                ]
-                                                            ])
-                                                        }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("h3", {
-                                                            className: style_default().dynamic([
-                                                                [
-                                                                    "7198732ef39d346a",
-                                                                    [
-                                                                        bedge_grunge.src
-                                                                    ]
-                                                                ]
-                                                            ]),
-                                                            children: "لینک"
-                                                        })
-                                                    ]
-                                                }),
-                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                                    className: style_default().dynamic([
-                                                        [
-                                                            "7198732ef39d346a",
-                                                            [
-                                                                bedge_grunge.src
-                                                            ]
-                                                        ]
-                                                    ]) + " " + ((resume_module_default()).card_item_content + " " + (resume_module_default()).card_links || ""),
-                                                    children: [
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                            target: "_blank",
-                                                            href: "https://github.com/vaghardoost",
-                                                            className: style_default().dynamic([
-                                                                [
-                                                                    "7198732ef39d346a",
-                                                                    [
-                                                                        bedge_grunge.src
-                                                                    ]
-                                                                ]
-                                                            ]),
-                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                                                height: "32",
-                                                                width: "32",
-                                                                src: "https://cdn.simpleicons.org/github",
-                                                                className: style_default().dynamic([
-                                                                    [
-                                                                        "7198732ef39d346a",
-                                                                        [
-                                                                            bedge_grunge.src
-                                                                        ]
-                                                                    ]
-                                                                ])
-                                                            })
-                                                        }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("br", {
-                                                            className: style_default().dynamic([
-                                                                [
-                                                                    "7198732ef39d346a",
-                                                                    [
-                                                                        bedge_grunge.src
-                                                                    ]
-                                                                ]
-                                                            ])
-                                                        }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                            target: "_blank",
-                                                            href: "https://t.me.vaghardoost",
-                                                            className: style_default().dynamic([
-                                                                [
-                                                                    "7198732ef39d346a",
-                                                                    [
-                                                                        bedge_grunge.src
-                                                                    ]
-                                                                ]
-                                                            ]),
-                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                                                height: "32",
-                                                                width: "32",
-                                                                src: "https://cdn.simpleicons.org/telegram",
-                                                                className: style_default().dynamic([
-                                                                    [
-                                                                        "7198732ef39d346a",
-                                                                        [
-                                                                            bedge_grunge.src
-                                                                        ]
-                                                                    ]
-                                                                ])
-                                                            })
-                                                        }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("br", {
-                                                            className: style_default().dynamic([
-                                                                [
-                                                                    "7198732ef39d346a",
-                                                                    [
-                                                                        bedge_grunge.src
-                                                                    ]
-                                                                ]
-                                                            ])
-                                                        }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                            target: "_blank",
-                                                            href: "mailto:farhang.vaghardoost@gmail.com",
-                                                            className: style_default().dynamic([
-                                                                [
-                                                                    "7198732ef39d346a",
-                                                                    [
-                                                                        bedge_grunge.src
-                                                                    ]
-                                                                ]
-                                                            ]),
-                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                                                height: "32",
-                                                                width: "32",
-                                                                src: "https://cdn.simpleicons.org/gmail",
-                                                                className: style_default().dynamic([
-                                                                    [
-                                                                        "7198732ef39d346a",
-                                                                        [
-                                                                            bedge_grunge.src
-                                                                        ]
-                                                                    ]
-                                                                ])
-                                                            })
-                                                        }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("br", {
-                                                            className: style_default().dynamic([
-                                                                [
-                                                                    "7198732ef39d346a",
-                                                                    [
-                                                                        bedge_grunge.src
-                                                                    ]
-                                                                ]
-                                                            ])
-                                                        }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                            target: "_blank",
-                                                            href: "#",
-                                                            className: style_default().dynamic([
-                                                                [
-                                                                    "7198732ef39d346a",
-                                                                    [
-                                                                        bedge_grunge.src
-                                                                    ]
-                                                                ]
-                                                            ]),
-                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                                                height: "32",
-                                                                width: "32",
-                                                                src: "https://cdn.simpleicons.org/linkedin",
-                                                                className: style_default().dynamic([
-                                                                    [
-                                                                        "7198732ef39d346a",
-                                                                        [
-                                                                            bedge_grunge.src
-                                                                        ]
-                                                                    ]
-                                                                ])
-                                                            })
-                                                        })
-                                                    ]
-                                                })
-                                            ]
+                                        /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                            className: (resume_module_default()).link,
+                                            dir: "ltr",
+                                            target: "_blank",
+                                            href: "https://linkedin.com/in/vaghardoost",
+                                            children: "vaghardoost"
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                            src: telegram.src
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                            className: (resume_module_default()).link,
+                                            dir: "ltr",
+                                            target: "_blank",
+                                            href: "https://t.me/vaghardoost",
+                                            children: "@vaghardoost"
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                            src: instagram.src
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                            className: (resume_module_default()).link,
+                                            dir: "ltr",
+                                            target: "_blank",
+                                            href: "https://instagram.com/fa.v_74",
+                                            children: "@fa.v_74"
                                         })
                                     ]
                                 })
                             ]
                         })
                     })
-                })
+                ]
             }),
-            jsx_runtime_.jsx((style_default()), {
-                id: "7198732ef39d346a",
-                dynamic: [
-                    bedge_grunge.src
-                ],
-                children: `body{background:var(--dark-color)url(${bedge_grunge.src})}`
+            /*#__PURE__*/ jsx_runtime_.jsx("style", {
+                children: `
+    body{
+      background-attachment: fixed;
+      background-size: cover;
+      background-image: url(${_18240979_v748_toon_103.src});
+    }
+    `
             })
         ]
     });
@@ -761,14 +621,6 @@ module.exports = require("next/head");
 "use strict";
 module.exports = require("react/jsx-runtime");
 
-/***/ }),
-
-/***/ 9816:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("styled-jsx/style");
-
 /***/ })
 
 };
@@ -778,7 +630,7 @@ module.exports = require("styled-jsx/style");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(9746));
+var __webpack_exports__ = (__webpack_exec__(831));
 module.exports = __webpack_exports__;
 
 })();

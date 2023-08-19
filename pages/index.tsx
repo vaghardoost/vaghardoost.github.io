@@ -8,6 +8,7 @@ import Note from "../code/model/note";
 import Header from "../components/landing/header";
 
 import style from "./index.module.css";
+import { namespace } from "../code/api/_namespace";
 
 const Home = ({ category, notes }: Props) => {
   return <>
@@ -34,6 +35,7 @@ const Home = ({ category, notes }: Props) => {
                     <h2>{label}</h2>
                     <p>{description}</p>
                   </div>
+
                 </Link>
               </div>
             }
@@ -54,7 +56,7 @@ const Home = ({ category, notes }: Props) => {
             <div className="col-md-4">
               <Link className="link" href={`/note/${note.title.replaceAll(' ', '_')}`}>
                 <div className={style.card_note}>
-                  <img src={`/images/${note.photo}`} />
+                  <img src={`/images/${note.photo?.replaceAll(`http://localhost:31375/${namespace}/photo/`, '')}`} />
                   <div className={style.card_note_content}>
                     <h5>{note.title}</h5>
                     {
@@ -82,11 +84,12 @@ interface Props {
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
   const category = await api.getCategories();
-  // const notes = await api.getPinNotes();
+  const notes = await api.getPinNotes();
+  // api.getPinNotes();
   return {
     props: {
       category: category,
-      notes: []
+      notes: notes
     },
     revalidate: 1
   }

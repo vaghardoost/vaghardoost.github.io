@@ -11,16 +11,16 @@ export const getCategories = async () => {
 }
 
 export const getPinNotes = async () => {
-    // const list = [
-    //     '24ae5013e83ef5dd',
-    //     '78ba8400bfd21fa6',
-    //     'cb19c000d579cb4e'
-    // ];
-    // const result: Note[] = [];
-    // for (const id of list) {
-    //     const { data } = await axios.get<ApiResult<Note>>(`http://localhost:31376/note/${id}`);
-    //     result.push(data.payload);
-    // }
-    return [];
+    const list = [
+        '64d8cd3142d55f88a06365b5',
+        '64d8cb1b42d55f88a06365aa',
+        '64d8cd8042d55f88a06365b9'
+    ];
+    const result: Note[] = [];
+    for (const id of list) {
+        const { data } = await axios.get<ApiResult<Note>>(`http://localhost:31376/note/${namespace}/${id}`);
+        result.push(data.payload);
+    }
+    return result;
 }
 

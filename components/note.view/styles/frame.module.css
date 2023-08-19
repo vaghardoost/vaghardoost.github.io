@@ -1,8 +1,19 @@
 .frame {
-  background-color: whitesmoke;
-  padding: 5px;
-  margin: 15px 50px 15px 50px;
-  border: rgba(128, 128, 128, 0.4) 1px solid;
-  text-align: center;
-  border-radius: 5px;
+    margin: 25px 50px;
+    background-color:rgba(128, 128, 128, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.frame img {
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+}
+
+.frame p {
+    padding: 0;
+    margin: 0;
 }

@@ -8,6 +8,7 @@ import CategoryComponent from "../../components/layout/category";
 import headerPhoto from "../../styles/header.png";
 
 import style from "./category.module.css"
+import { namespace } from "../../code/api/_namespace";
 
 export default ({ category, children }: Props) => {
   const { isFallback } = useRouter();
@@ -24,9 +25,9 @@ export default ({ category, children }: Props) => {
     </>
   }
   return <>
-  <Head>
-    <title>دسته بندی {category.label}</title>
-  </Head>
+    <Head>
+      <title>دسته بندی {category.label}</title>
+    </Head>
     <div className={
       (category.parent === "" || !category.parent)
         ? style.main_topic_mode
@@ -36,12 +37,12 @@ export default ({ category, children }: Props) => {
     }>
       <header className={
         (category.parent === "" || !category.parent)
-        ? style.header_topic_mode
-        : style.header_category_mode
+          ? style.header_topic_mode
+          : style.header_category_mode
       }>
         {
           (category.avatar)
-            ? <img src={`/images/${category.avatar}`} className={style.header_icon} />
+            ? <img src={`/images/${category.avatar.replaceAll(`http://localhost:31375/${namespace}/photo`, '')}`} className={style.header_icon} />
             : <></>
         }
         <div className={style.header_content}>
@@ -70,10 +71,10 @@ export default ({ category, children }: Props) => {
                       <div className={style.card}>
                         {
                           (note.photo)
-                            ? <img src={`/images/${note.photo}`} />
+                            ? <img src={`/images/${note.photo.replaceAll(`http://localhost:31375/${namespace}/photo`, '')}`} />
                             : <div><p>بدون تصویر</p></div>
                         }
-                        <h5 className="around">{note.title}</h5>
+                        <h6 className="around">{note.title}</h6>
                       </div>
                     </Link>
                   </div>

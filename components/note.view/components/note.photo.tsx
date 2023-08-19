@@ -3,7 +3,7 @@ import NoteRich from "./note.rich"
 import style from "../styles/photo.module.css"
 
 export const NoteComponentPhoto = ({ photo }: Props) => {
-  const hasCaption = photo.richtext.length > 0;
+  const hasCaption = photo.content.length > 0;
   const url = photo.url.split('/')
   return <>
     <div className={style.cardContainer}>
@@ -14,7 +14,7 @@ export const NoteComponentPhoto = ({ photo }: Props) => {
             ?
             <div className={style.cardDesc}>
               {
-                photo.richtext.map((richtext) => <NoteRich richtext={richtext} />)
+                photo.content.map((richtext) => <NoteRich richtext={richtext} />)
               }
             </div>
             :

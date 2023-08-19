@@ -3,6 +3,7 @@ import style from "./category.module.css"
 import { CSSProperties } from "react";
 import headerIMG from "../../styles/header.png"
 import Link from "next/link";
+import { namespace } from "../../code/api/_namespace";
 
 export default ({ category, showNotes }: Props) => {
   const headerStyle: CSSProperties = {
@@ -20,7 +21,7 @@ export default ({ category, showNotes }: Props) => {
       <div style={headerStyle}>
         {
           (category.avatar)
-            ? <img className={style.image} src={`/images/${category.avatar}`} />
+            ? <img className={style.image} src={`/images/${category.avatar.replaceAll(`http://localhost:31375/${namespace}/photo`, '')}`} />
             : <></>
         }
       </div>

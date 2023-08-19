@@ -52,9 +52,9 @@ module.exports = {
 "use strict";
 __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "C": () => (/* binding */ getCategories)
+/* harmony export */   "C": () => (/* binding */ getCategories),
+/* harmony export */   "s": () => (/* binding */ getPinNotes)
 /* harmony export */ });
-/* unused harmony export getPinNotes */
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9648);
 /* harmony import */ var _namespace__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1112);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([axios__WEBPACK_IMPORTED_MODULE_0__]);
@@ -66,17 +66,17 @@ const getCategories = async ()=>{
     return data.payload;
 };
 const getPinNotes = async ()=>{
-    // const list = [
-    //     '24ae5013e83ef5dd',
-    //     '78ba8400bfd21fa6',
-    //     'cb19c000d579cb4e'
-    // ];
-    // const result: Note[] = [];
-    // for (const id of list) {
-    //     const { data } = await axios.get<ApiResult<Note>>(`http://localhost:31376/note/${id}`);
-    //     result.push(data.payload);
-    // }
-    return [];
+    const list = [
+        "64d8cd3142d55f88a06365b5",
+        "64d8cb1b42d55f88a06365aa",
+        "64d8cd8042d55f88a06365b9"
+    ];
+    const result = [];
+    for (const id of list){
+        const { data  } = await axios__WEBPACK_IMPORTED_MODULE_0__["default"].get(`http://localhost:31376/note/${_namespace__WEBPACK_IMPORTED_MODULE_1__/* .namespace */ .u}/${id}`);
+        result.push(data.payload);
+    }
+    return result;
 };
 
 __webpack_async_result__();
@@ -99,6 +99,8 @@ __webpack_async_result__();
 /* harmony import */ var _styles_header_module_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_header_module_css__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1664);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _code_api_namespace__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(1112);
+
 
 
 
@@ -156,7 +158,7 @@ __webpack_async_result__();
                                                                                     className: `${(_styles_navbar_module_css__WEBPACK_IMPORTED_MODULE_3___default().megamenu__item)} `,
                                                                                     children: [
                                                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                                                                            src: `/images/${category.avatar}`
+                                                                                            src: `/images/${category.avatar.replaceAll(`http://localhost:31375/${_code_api_namespace__WEBPACK_IMPORTED_MODULE_4__/* .namespace */ .u}/photo/`, "")}`
                                                                                         }),
                                                                                         /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                                                                             children: [
@@ -223,8 +225,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_landing_header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(9166);
 /* harmony import */ var _index_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(9971);
 /* harmony import */ var _index_module_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_index_module_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _code_api_namespace__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(1112);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_code_api_main__WEBPACK_IMPORTED_MODULE_4__]);
 _code_api_main__WEBPACK_IMPORTED_MODULE_4__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+
 
 
 
@@ -307,7 +311,7 @@ const Home = ({ category , notes  })=>{
                                         className: (_index_module_css__WEBPACK_IMPORTED_MODULE_6___default().card_note),
                                         children: [
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                                src: `/images/${note.photo}`
+                                                src: `/images/${note.photo?.replaceAll(`http://localhost:31375/${_code_api_namespace__WEBPACK_IMPORTED_MODULE_7__/* .namespace */ .u}/photo/`, "")}`
                                             }),
                                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                                 className: (_index_module_css__WEBPACK_IMPORTED_MODULE_6___default().card_note_content),
@@ -336,11 +340,12 @@ const Home = ({ category , notes  })=>{
 };
 const getStaticProps = async ()=>{
     const category = await _code_api_main__WEBPACK_IMPORTED_MODULE_4__/* .getCategories */ .C();
-    // const notes = await api.getPinNotes();
+    const notes = await _code_api_main__WEBPACK_IMPORTED_MODULE_4__/* .getPinNotes */ .s();
+    // api.getPinNotes();
     return {
         props: {
             category: category,
-            notes: []
+            notes: notes
         },
         revalidate: 1
     };

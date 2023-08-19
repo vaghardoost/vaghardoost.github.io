@@ -81,6 +81,8 @@ __webpack_async_result__();
 /* harmony import */ var _styles_header_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(909);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1664);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _code_api_namespace__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(1112);
+
 
 
 
@@ -107,7 +109,7 @@ __webpack_async_result__();
                     style: headerStyle,
                     children: category.avatar ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                         className: (_category_module_css__WEBPACK_IMPORTED_MODULE_3___default().image),
-                        src: `/images/${category.avatar}`
+                        src: `/images/${category.avatar.replaceAll(`http://localhost:31375/${_code_api_namespace__WEBPACK_IMPORTED_MODULE_4__/* .namespace */ .u}/photo`, "")}`
                     }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {})
                 }),
                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {

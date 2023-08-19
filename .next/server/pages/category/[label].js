@@ -50,8 +50,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_header_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(909);
 /* harmony import */ var _category_module_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(9667);
 /* harmony import */ var _category_module_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_category_module_css__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _code_api_namespace__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(1112);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_code_api_category__WEBPACK_IMPORTED_MODULE_5__]);
 _code_api_category__WEBPACK_IMPORTED_MODULE_5__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+
 
 
 
@@ -129,7 +131,7 @@ _code_api_category__WEBPACK_IMPORTED_MODULE_5__ = (__webpack_async_dependencies_
                         ]) + " " + ((category.parent === "" || !category.parent ? (_category_module_css__WEBPACK_IMPORTED_MODULE_8___default().header_topic_mode) : (_category_module_css__WEBPACK_IMPORTED_MODULE_8___default().header_category_mode)) || ""),
                         children: [
                             category.avatar ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                src: `/images/${category.avatar}`,
+                                src: `/images/${category.avatar.replaceAll(`http://localhost:31375/${_code_api_namespace__WEBPACK_IMPORTED_MODULE_9__/* .namespace */ .u}/photo`, "")}`,
                                 className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
                                     [
                                         "d7b7384c524addf9",
@@ -255,7 +257,7 @@ _code_api_category__WEBPACK_IMPORTED_MODULE_5__ = (__webpack_async_dependencies_
                                                 ]) + " " + ((_category_module_css__WEBPACK_IMPORTED_MODULE_8___default().card) || ""),
                                                 children: [
                                                     note.photo ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                                        src: `/images/${note.photo}`,
+                                                        src: `/images/${note.photo.replaceAll(`http://localhost:31375/${_code_api_namespace__WEBPACK_IMPORTED_MODULE_9__/* .namespace */ .u}/photo`, "")}`,
                                                         className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
                                                             [
                                                                 "d7b7384c524addf9",
@@ -288,7 +290,7 @@ _code_api_category__WEBPACK_IMPORTED_MODULE_5__ = (__webpack_async_dependencies_
                                                             children: "بدون تصویر"
                                                         })
                                                     }),
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h6", {
                                                         className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default().dynamic([
                                                             [
                                                                 "d7b7384c524addf9",

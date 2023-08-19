@@ -5,7 +5,7 @@ import NoteRich from "./note.rich"
 export default ({ caption }:Props) => {
   return <div style={{margin:'20px'}}>
     {
-      caption.richtext.map((rich)=>{
+      caption.content.map((rich)=>{
         return <NoteRich key={generate()} richtext={rich}/>
       })
     }

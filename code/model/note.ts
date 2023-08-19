@@ -36,18 +36,20 @@ interface Section {
 
 export interface Caption extends Section {
     type: 'caption'
-    richtext: RichText[]
+    content: RichText[]
 }
 
 export interface Photo extends Section {
     type: 'photo'
     url: string
-    richtext: RichText[]
+    content: RichText[]
 }
 
 export interface Frame extends Section {
     type: 'frame'
-    richtext: RichText[]
+    title?: string
+    status?: "warning" | "tip" | "danger" | "info" | "question" | "success"
+    content: RichText[]
 }
 
 export interface Code extends Section {

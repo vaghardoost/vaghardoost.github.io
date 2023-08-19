@@ -8,6 +8,7 @@ import Note from "../../code/model/note"
 import NoteComponent from "../../components/note.view"
 import { useRouter } from "next/router"
 import Head from "next/head"
+import { namespace } from "../../code/api/_namespace"
 
 export default ({ note }: Props) => {
   const { isFallback } = useRouter();
@@ -23,10 +24,11 @@ export default ({ note }: Props) => {
       </div>
     </>
   }
+
   return <>
-  <Head>
-    <title>{note.title}</title>
-  </Head>
+    <Head>
+      <title>{note.title}</title>
+    </Head>
     <div className={style.background} style={{
       background: `url(${headerIMG.src}) ${note.category?.color ?? "var(--dark-color)"}`,
       backgroundSize: '950px'
@@ -35,15 +37,16 @@ export default ({ note }: Props) => {
       <div className="container">
         <div className="row">
           <div className="col-md-8">
+            <h1 className={style.note_title}>{note.title}</h1>
             <div className={`${style.card} ${style.meduimFont}`}>
               {
                 (note.photo)
-                  ? <img className={style.card_img} src={`/images/${note.photo}`} />
+                  ? <img className={style.card_img} src={`/images/${note.photo.replace(`http://localhost:31375/${namespace}/photo`, "")}`} />
                   : <></>
               }
               <div className={style.title}>
                 <h2>{note.title}</h2>
-                <p>{new Date(Number.parseInt(note.createAt)).toLocaleDateString('fa-IR')}</p>
+                {/* <p>{new Date(Number.parseInt(note.createAt)).toLocaleDateString('fa-IR')}</p> */}
                 <p>در این نوشته خواهید خواند:</p>
                 <div className={style.title__tags}>
                   <ul>
@@ -57,7 +60,6 @@ export default ({ note }: Props) => {
                   </ul>
                 </div>
               </div>
-
               <div className="around">
                 <NoteComponent note={note} />
               </div>
@@ -65,7 +67,7 @@ export default ({ note }: Props) => {
           </div>
           <div className="col-md-4">
             <div className={style.category_card}>
-              <img src={`/images/${note.category?.avatar}`} alt="" />
+              <img src={`/images/${note.category?.avatar.replace(`http://localhost:31375/${namespace}/photo`, "")}`} alt="" />
               <h2>{note.category?.label}</h2>
               <p>{note.category?.description}</p>
             </div>
@@ -97,7 +99,6 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
 
   for (const item of list) {
     const { id, title } = item;
-
     if (title.replaceAll(' ', '_') === titleParams!.toString()) {
       const { payload: note, success } = await api.get(id);
       if (!success) {
@@ -108,8 +109,8 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
         revalidate: 1
       }
     }
-
   }
+
   return { notFound: true }
 }
 
