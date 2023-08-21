@@ -274,7 +274,8 @@ var resume_module_default = /*#__PURE__*/__webpack_require__.n(resume_module);
                                                                 children: [
                                                                     /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                                         className: (resume_module_default()).link,
-                                                                        href: "#",
+                                                                        target: "_blank",
+                                                                        href: "https://cafebazaar.ir/app/com.example.dastyar",
                                                                         children: "دستیار زبان کلمه"
                                                                     }),
                                                                     /*#__PURE__*/ jsx_runtime_.jsx("p", {
@@ -286,11 +287,24 @@ var resume_module_default = /*#__PURE__*/__webpack_require__.n(resume_module);
                                                                 children: [
                                                                     /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                                         className: (resume_module_default()).link,
-                                                                        href: "#",
+                                                                        target: "_blank",
+                                                                        href: "https://cafebazaar.ir/app/com.vaghar.times",
                                                                         children: "مدیریت زمان"
                                                                     }),
                                                                     /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                                                         children: "اپلیکیشن با ابزار های مختلف برای محاسبات زمان و تاریخ که امکانات مختلفی را دارد انتشار در تابستان ۱۴۰۱ کافه بازار"
+                                                                    }),
+                                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                                                                        children: [
+                                                                            "برای اطلاعات بیشتر توی این ",
+                                                                            /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                                                className: (resume_module_default()).link,
+                                                                                target: "_blank",
+                                                                                href: "/note/اپلیکیشن_مدیریت_زمان",
+                                                                                children: "پست"
+                                                                            }),
+                                                                            " توضیح دادم"
+                                                                        ]
                                                                     })
                                                                 ]
                                                             }),
@@ -298,7 +312,8 @@ var resume_module_default = /*#__PURE__*/__webpack_require__.n(resume_module);
                                                                 children: [
                                                                     /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                                         className: (resume_module_default()).link,
-                                                                        href: "#",
+                                                                        target: "_blank",
+                                                                        href: "/note/ایده_پردازی",
                                                                         children: "مجله سرگرمی قاصدک"
                                                                     }),
                                                                     /*#__PURE__*/ jsx_runtime_.jsx("p", {
@@ -372,12 +387,25 @@ var resume_module_default = /*#__PURE__*/__webpack_require__.n(resume_module);
                                                         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
                                                             children: [
                                                                 /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                                    href: "#",
+                                                                    href: "https://github.com/vaghardoost/FCMS",
+                                                                    target: "_blank",
                                                                     className: (resume_module_default()).link,
                                                                     children: "سیستم مدیریت محتوا"
                                                                 }),
                                                                 /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                                                     children: "یک سیستم مدیریت محتوا در سمت backend با فریم ورک nestjs طراحی و توسعه داده میشود و از معماری میکروسرویس بهره میبرد که به صورت open source و رایگان در گیتهاب موجود است"
+                                                                }),
+                                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                                                                    children: [
+                                                                        "برای اطلاعات بیشتر توی این ",
+                                                                        /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                                            className: (resume_module_default()).link,
+                                                                            target: "_blank",
+                                                                            href: "/note/معرفی_FCMS",
+                                                                            children: "پست"
+                                                                        }),
+                                                                        " توضیح دادم"
+                                                                    ]
                                                                 })
                                                             ]
                                                         })
@@ -437,7 +465,8 @@ var resume_module_default = /*#__PURE__*/__webpack_require__.n(resume_module);
                                                                 children: [
                                                                     /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                                         className: (resume_module_default()).link,
-                                                                        href: "#",
+                                                                        target: "_blank",
+                                                                        href: "https://github.com/vaghardoost/Admin-Panel",
                                                                         children: "پنل گرافیکی سیستم مدیریت محتوا"
                                                                     }),
                                                                     /*#__PURE__*/ jsx_runtime_.jsx("p", {
@@ -449,7 +478,8 @@ var resume_module_default = /*#__PURE__*/__webpack_require__.n(resume_module);
                                                                 children: [
                                                                     /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                                         className: (resume_module_default()).link,
-                                                                        href: "#",
+                                                                        target: "_blank",
+                                                                        href: "https://github.com/vaghardoost/vaghardoost.github.io",
                                                                         children: "وبلاگ شخصی"
                                                                     }),
                                                                     " (همین این\uD83D\uDE05)",

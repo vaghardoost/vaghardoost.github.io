@@ -240,7 +240,12 @@ const NoteComponentTitle = ({ title  })=>{
             style: {
                 margin: "10px"
             },
-            children: title.text
+            children: title.link ? /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                href: title.link,
+                target: "_blank",
+                className: "link",
+                children: title.text
+            }) : title.text
         })
     });
 };
@@ -254,7 +259,16 @@ const NoteComponentTitle = ({ title  })=>{
         style: {
             margin: "20px"
         },
-        children: caption.content.map((rich)=>{
+        children: caption.link ? /*#__PURE__*/ jsx_runtime_.jsx("a", {
+            className: "link",
+            href: caption.link,
+            target: "_blank",
+            children: caption.content.map((rich)=>{
+                return /*#__PURE__*/ jsx_runtime_.jsx(note_rich, {
+                    richtext: rich
+                }, (0,external_randomstring_namespaceObject.generate)());
+            })
+        }) : caption.content.map((rich)=>{
             return /*#__PURE__*/ jsx_runtime_.jsx(note_rich, {
                 richtext: rich
             }, (0,external_randomstring_namespaceObject.generate)());

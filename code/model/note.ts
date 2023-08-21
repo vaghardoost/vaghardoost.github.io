@@ -31,6 +31,7 @@ export type RichWeight = 'BOLD' | 'ITALIC' | 'STRIKETHROUGH' | 'UNDERLINE'
 
 interface Section {
     id?: string
+    link?: string
     type: string
 }
 
