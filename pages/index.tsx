@@ -19,31 +19,6 @@ const Home = ({ category, notes }: Props) => {
     <Container>
 
       <Col md={12} className="center">
-        <h2 className="around">تاپیک</h2>
-        <p>
-          مطالب از جهت کلی توی این سیستم به قسمت های زیر تقسیم میشن
-        </p>
-      </Col>
-
-      <div className={`row ${style.cat_row}`}>
-        {
-          category.map(({ parent, label, description }) => {
-            if (parent === "" || !parent) {
-              return <div className="col-md-4">
-                <Link className="link" href={`/category/${label.replaceAll(' ', '_')}`}>
-                  <div className={style.card_cat}>
-                    <h2>{label}</h2>
-                    <p>{description}</p>
-                  </div>
-
-                </Link>
-              </div>
-            }
-          })
-        }
-      </div>
-
-      <Col md={12} className="center">
         <h2 className="around">نوشته های برتر</h2>
         <p>
           فهرست بعضی از نوشته هایی که منتشر شده
@@ -73,6 +48,31 @@ const Home = ({ category, notes }: Props) => {
           )
         }
       </div>
+      <Col md={12} className="center">
+        <h2 className="around">تاپیک</h2>
+        <p>
+          مطالب از جهت کلی توی این سیستم به قسمت های زیر تقسیم میشن
+        </p>
+      </Col>
+
+      <div className={`row ${style.cat_row}`}>
+        {
+          category.map(({ parent, label, description }) => {
+            if (parent === "" || !parent) {
+              return <div className="col-md-4">
+                <Link className="link" href={`/category/${label.replaceAll(' ', '_')}`}>
+                  <div className={style.card_cat}>
+                    <h2>{label}</h2>
+                    <p>{description}</p>
+                  </div>
+
+                </Link>
+              </div>
+            }
+          })
+        }
+      </div>
+
     </Container>
   </>
 }
